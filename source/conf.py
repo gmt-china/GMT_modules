@@ -34,7 +34,6 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
-    'sphinx.ext.viewcode',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -46,14 +45,14 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 # The encoding of source files.
-#source_encoding = 'utf-8-sig'
+source_encoding = 'utf-8'
 
 # The master toctree document.
 master_doc = 'index'
 
 # General information about the project.
 project = 'GMT模块手册'
-copyright = '2016, SeisMan'
+copyright = '2014-2016, SeisMan'
 author = 'SeisMan'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -114,7 +113,8 @@ todo_include_todos = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+import sphinx_rtd_theme
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -122,11 +122,11 @@ html_theme = 'alabaster'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = project
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -148,11 +148,11 @@ html_static_path = ['_static']
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-#html_extra_path = []
+html_extra_path = ['CNAME']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-#html_last_updated_fmt = '%b %d, %Y'
+html_last_updated_fmt = '%Y年%m月%d日'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -206,29 +206,38 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'GMTdoc'
+htmlhelp_basename = 'GMT_modules'
 
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
-
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
-
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
-
-# Latex figure (float) alignment
-#'figure_align': 'htbp',
+        'papersize'  : 'a4paper',
+        'utf8extra'  : '',
+        'inputenc'   : '',
+        'cmappkg'    : '',
+        'fontenc'    : '',
+        'releasename': '',
+        'babel'      : r'''\usepackage[english]{babel}''',
+        'preamble'   : r'''
+            \usepackage{ctex}
+            \parindent 2em
+            \setcounter{tocdepth}{3}     % 目录深度
+            \setcounter{secnumdepth}{3}  % 编号深度
+            \hypersetup{
+                CJKbookmarks = true,
+                colorlinks = true,
+                linkcolor = blue,
+                citecolor = blue,
+                urlcolor = blue,
+             }
+        ''',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'GMT.tex', 'GMT模块手册 Documentation',
+    (master_doc, 'GMT_modules.tex', 'GMT模块手册',
      'SeisMan', 'manual'),
 ]
 
@@ -258,7 +267,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'gmt', 'GMT模块手册 Documentation',
+    (master_doc, 'gmt', 'GMT模块手册',
      [author], 1)
 ]
 
@@ -272,8 +281,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'GMT', 'GMT模块手册 Documentation',
-     author, 'GMT', 'One line description of project.',
+    (master_doc, 'GMT', 'GMT模块手册',
+     author, 'GMT', 'GMT模块手册中文版',
      'Miscellaneous'),
 ]
 
