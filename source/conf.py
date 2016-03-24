@@ -332,4 +332,7 @@ epub_exclude_files = ['search.html']
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'gmt': ('http://gmt.soest.hawaii.edu/doc/5.2.1/', 'gmt.inv')}
+intersphinx_mapping = {
+    'gmt': ('http://gmt.soest.hawaii.edu/doc/5.2.1/', 'gmt.inv'),
+    'doc': ('http://docs.gmt-china.org/', 'docs.inv')
+}
