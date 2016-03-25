@@ -119,7 +119,13 @@ html_theme = 'cloud'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = { "roottarget": "index" }
+html_theme_options = {
+    "roottarget": "index",
+    "sidebar_localtoc_title": "目录",
+    "sidebar_prev_title": "上一页",
+    "sidebar_next_title": "下一页",
+    "fontcssurl": "//fonts.lug.ustc.edu.cn/css?family=Noticia+Text|Open+Sans|Droid+Sans+Mono",
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = [cloud_sptheme.get_theme_dir()]
