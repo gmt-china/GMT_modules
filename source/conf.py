@@ -124,7 +124,7 @@ html_theme_options = {
     "sidebar_localtoc_title": "目录",
     "sidebar_prev_title": "上一页",
     "sidebar_next_title": "下一页",
-    "fontcssurl": "//fonts.lug.ustc.edu.cn/css?family=Noticia+Text|Open+Sans|Droid+Sans+Mono",
+    "fontcssurl": "//fonts.googleapis.com/css?family=Noticia+Text|Open+Sans|Droid+Sans+Mono",
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
