@@ -1,5 +1,6 @@
-
 # GMT参考手册
+
+[![Build Status](https://travis-ci.org/gmt-china/GMT_modules.svg?branch=master)](https://travis-ci.org/gmt-china/GMT_modules)
 
 欢迎来到 GMT(Generic Mapping Tools) 的世界。
 
