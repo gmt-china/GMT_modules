@@ -11,7 +11,7 @@ grdcut
 选项
 ----
 
-`<ingrid>``
+``<ingrid>``
     输入网格文件
 
 ``-G<outgrid>``
