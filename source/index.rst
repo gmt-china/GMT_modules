@@ -190,6 +190,7 @@ GMT模块列表
 .. toctree::
    :maxdepth: 1
    :hidden:
+   :caption: 目 录
 
    backtracker
    blockmean
@@ -273,11 +274,11 @@ GMT模块列表
    nearneighbor
    originator
    project
-   psconvert
    psbasemap
    psclip
    pscoast
    pscontour
+   psconvert
    pscoupe
    pshistogram
    psimage

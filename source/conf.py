@@ -24,7 +24,7 @@ import os
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
-#needs_sphinx = '1.0'
+needs_sphinx = '1.4'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -54,8 +54,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'GMT模块手册'
-copyright = '2014-2016, SeisMan'
-author = 'SeisMan'
+copyright = '2014-2016, SeisMan; 2016, GMT中文社区'
+author = 'GMT中文社区'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -77,7 +77,7 @@ language = 'zh_CN'
 # non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'
+today_fmt = '%Y年%m月%d日'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -99,6 +99,7 @@ exclude_patterns = []
 # output. They are ignored by default.
 #show_authors = False
 
+highlight_language = 'bash'
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
@@ -228,6 +229,7 @@ latex_elements = {
         'fontenc'    : '',
         'releasename': '',
         'babel'      : r'''\usepackage[english]{babel}''',
+        'figure_align': 'htp',
         'preamble'   : r'''
             \usepackage{ctex}
             \parindent 2em
@@ -240,6 +242,8 @@ latex_elements = {
                 citecolor = blue,
                 urlcolor = blue,
              }
+             \addto\captionsenglish{\renewcommand\listfigurename{插图目录}}
+             \addto\captionsenglish{\renewcommand\listtablename{表格目录}}
         ''',
 }
 
@@ -247,8 +251,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'GMT_modules.tex', 'GMT模块手册',
-     'SeisMan', 'manual'),
+    (master_doc, 'GMT_modules.tex', project, author, 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -270,76 +273,6 @@ latex_documents = [
 
 # If false, no module index is generated.
 #latex_domain_indices = True
-
-# -- Options for Epub output ----------------------------------------------
-
-# Bibliographic Dublin Core info.
-epub_title = project
-epub_author = author
-epub_publisher = author
-epub_copyright = copyright
-
-# The basename for the epub file. It defaults to the project name.
-#epub_basename = project
-
-# The HTML theme for the epub output. Since the default themes are not
-# optimized for small screen space, using the same theme for HTML and epub
-# output is usually not wise. This defaults to 'epub', a theme designed to save
-# visual space.
-#epub_theme = 'epub'
-
-# The language of the text. It defaults to the language option
-# or 'en' if the language is not set.
-#epub_language = ''
-
-# The scheme of the identifier. Typical schemes are ISBN or URL.
-#epub_scheme = ''
-
-# The unique identifier of the text. This can be a ISBN number
-# or the project homepage.
-#epub_identifier = ''
-
-# A unique identification for the text.
-#epub_uid = ''
-
-# A tuple containing the cover image and cover page html template filenames.
-#epub_cover = ()
-
-# A sequence of (type, uri, title) tuples for the guide element of content.opf.
-#epub_guide = ()
-
-# HTML files that should be inserted before the pages created by sphinx.
-# The format is a list of tuples containing the path and title.
-#epub_pre_files = []
-
-# HTML files that should be inserted after the pages created by sphinx.
-# The format is a list of tuples containing the path and title.
-#epub_post_files = []
-
-# A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
-
-# The depth of the table of contents in toc.ncx.
-#epub_tocdepth = 3
-
-# Allow duplicate toc entries.
-#epub_tocdup = True
-
-# Choose between 'default' and 'includehidden'.
-#epub_tocscope = 'default'
-
-# Fix unsupported image types using the Pillow.
-#epub_fix_images = False
-
-# Scale large images.
-#epub_max_image_width = 0
-
-# How to display URL addresses: 'footnote', 'no', or 'inline'.
-#epub_show_urls = 'inline'
-
-# If false, no index is generated.
-#epub_use_index = True
-
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
