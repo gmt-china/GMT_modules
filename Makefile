@@ -20,13 +20,11 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
 .PHONY: help clean linkcheck figures github
-.PHONY: html qthelp epub latex xelatexpdf
+.PHONY: html latex xelatexpdf
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
-	@echo "  qthelp     to make HTML files and a qthelp project"
-	@echo "  epub       to make an epub"
 	@echo "  latex      to make LaTeX files"
 	@echo "  xelatexpdf to make LaTeX files and run them through xelatex"
 	@echo "  linkcheck  to check all external links for integrity"
@@ -48,28 +46,14 @@ linkcheck:
 
 github: html
 	@echo "Push build/html to github/gh-pages"
-	ghp-import -b gh-pages -r github -p -n build/html \
-		-m "Update at `date +'%Y-%m-%d %H:%M:%S'`"
+	ghp-import -b gh-pages -n build/html -m "Update at `date +'%Y-%m-%d %H:%M:%S'`"
+	git push github gh-pages:gh-pages
 
 ## Builers
 html: figures
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
-
-qthelp: figures
-	$(SPHINXBUILD) -b qthelp $(ALLSPHINXOPTS) $(BUILDDIR)/qthelp
-	@echo
-	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
-	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/GMT.qhcp"
-	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/GMT.qhc"
-
-epub: figures
-	$(SPHINXBUILD) -b epub $(ALLSPHINXOPTS) $(BUILDDIR)/epub
-	@echo
-	@echo "Build finished. The epub file is in $(BUILDDIR)/epub."
 
 latex: figures
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
@@ -83,3 +67,8 @@ xelatexpdf: figures
 	@echo "Running LaTeX files through pdflatex..."
 	cd $(BUILDDIR)/latex; latexmk -xelatex -shell-escape
 	@echo "xelatex finished; the PDF files are in $(BUILDDIR)/latex."
+
+release: html xelatexpdf
+	cd $(BUILDDIR) && mv html GMT_modules && zip -r ../GMT_modules.zip GMT_modules/
+	mv $(BUILDDIR)/latex/GMT_modules.pdf .
+	rm -rf $(BUILDDIR)/*
