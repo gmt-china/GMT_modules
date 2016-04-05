@@ -23,3 +23,14 @@
 <meta name="msapplication-TileImage" content="_static/apple-touch-icon-114x114.png"/>
 <meta name="msapplication-TileColor" content="#d83434"/>
 {% endblock %}
+
+{%- block document %}
+    <div class="documentwrapper">
+    {%- if render_sidebar %}<div class="bodywrapper">{%- endif %}
+        <div class="body" role="main">
+            {% block body %} {% endblock %}
+            {% include "comments.html" %}
+        </div>
+    {%- if render_sidebar %}</div>{%- endif %}
+    </div>
+{%- endblock %}
