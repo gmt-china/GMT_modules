@@ -10,7 +10,7 @@ import zlib
 inventory_header = '''\
 # Sphinx inventory version 2
 # Project: GMT
-# Version: 5.2.1
+# Version: 5.3.1
 # The remainder of this file is compressed with zlib.
 '''.encode('utf-8')
 

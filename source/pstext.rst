@@ -49,11 +49,12 @@ pstext
     #. 偏移量后加上 ``v`` 表示绘制一条连接初始位置与偏移后位置的直线
     #. ``v<pen>`` 控制连线的画笔属性
 
-``-F[+a[angle]][+c[justify]][+f[font]][+h][+j[justify]][+l]``
+``-F[+a|+A[angle]][+c[justify]][+f[font]][+j[justify]][+h|+l|+r[<first>]|+t<text>|+z<format>]``
     控制文本的角度、对齐方式和字体等属性。
 
     #. ``+f<font>`` 设置文本的字体， 见 :ref:`doc:text`
     #. ``+a<angle>`` 文本相对于水平方向逆时针旋转的角度
+    #. ``+A<angle>`` force text-baselines to convert into the -90/+90 range
     #. ``+j<justify>`` 文本对齐方式，见 :ref:`doc:anchors`
 
     下面的命令中，统一设置了所有文本的字号为30p，4号字体，红色，文本旋转45度，且以左上角对齐::
@@ -91,23 +92,29 @@ pstext
 
         echo '(a)' | gmt pstext -R0/10/0/10 -JX10c/10c -B1 -F+cTL -Dj0.2c/0.2c > text.ps
 
-    ``+h`` 会直接从多段数据的段头记录中提取文本::
+    通常来说，要绘制的文本都来自于输入数据的某一列。对于多段数据而言，还可以使用其他子选项来设置文本的来源：
 
-        gmt pstext -R0/10/0/10 -JX10c/10c -B1 -F+h > text.ps << EOF
-        > TEXT1
-        2  2
-        > TEXT2
-        5  5
-        EOF
+    -  ``+h`` 会直接从多段数据的段头记录中提取文本::
 
-    ``+l`` 会直接从多段数据的段头记录里的 ``-L<label>`` 中提取信息::
+            gmt pstext -R0/10/0/10 -JX10c/10c -B1 -F+h > text.ps << EOF
+            > TEXT1
+            2  2
+            > TEXT2
+            5  5
+            EOF
 
-        gmt pstext -R0/10/0/10 -JX10c/10c -B1 -F+h > text.ps << EOF
-        > -LTEXT1
-        2  2
-        > -LTEXT2
-        5  5
-        EOF
+    -  ``+l`` 会直接从多段数据的段头记录里的 ``-L<label>`` 中提取信息::
+
+            gmt pstext -R0/10/0/10 -JX10c/10c -B1 -F+h > text.ps << EOF
+            > -LTEXT1
+            2  2
+            > -LTEXT2
+            5  5
+            EOF
+
+    -  ``+r<first>`` 会使用记录号作为文本（子路号从 ``<first>`` 起算）
+    -  ``+t<text>`` 设置使用一个固定的字符串
+    -  ``+z<format>`` 将 Z 值以特定的格式输出为字符串，默认格式由 FORMAT_FLOAT_MAP 控制
 
 ``-G``
     设置文本框的填充色。

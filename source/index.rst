@@ -1,5 +1,5 @@
-GMT 5.2.1模块列表
-#################
+GMT 5.3.1 模块列表
+##################
 
 欢迎来到 GMT (Generic Mapping Tools) 的世界。
 
@@ -104,6 +104,7 @@ GMT 5.2.1模块列表
 
 - 计划整理的命令
 
+  #. :doc:`pssac`
   #. :doc:`grdtrack`
   #. :doc:`makecpt`
   #. :doc:`grd2cpt`
@@ -122,6 +123,7 @@ GMT 5.2.1模块列表
   #. :doc:`grdfft`
   #. :doc:`splitxyz`
   #. :doc:`gmtmath`
+  #. :doc:`pssolar`
 
 - 没有整理计划的命令
 
@@ -135,6 +137,7 @@ GMT 5.2.1模块列表
   #. :doc:`pswiggle`
   #. :doc:`grdgravmag3d`
   #. :doc:`grdhisteq`
+  #. :doc:`gmtpmodeler`
   #. :doc:`grdpmodeler`
   #. :doc:`grdredpol`
   #. :doc:`grdrotater`
@@ -166,6 +169,7 @@ GMT 5.2.1模块列表
   #. :doc:`gmtvector`
   #. :doc:`gravfft`
   #. :doc:`grdseamount`
+  #. :doc:`gpsgridder`
   #. :doc:`grdspotter`
   #. :doc:`greenspline`
   #. :doc:`gshhg`
@@ -211,6 +215,7 @@ GMT 5.2.1模块列表
    gmtinfo
    gmtlogo
    gmtmath
+   gmtpmodeler
    gmtregress
    gmtselect
    gmtset
@@ -219,6 +224,7 @@ GMT 5.2.1模块列表
    gmtswitch
    gmtvector
    gmtwhich
+   gpsgridder
    gravfft
    grd2cpt
    grd2rgb
@@ -287,9 +293,11 @@ GMT 5.2.1模块列表
    psmeca
    pspolar
    psrose
+   pssac
    psscale
    pssegy
    pssegyz
+   pssolar
    pstext
    psvelo
    pswiggle

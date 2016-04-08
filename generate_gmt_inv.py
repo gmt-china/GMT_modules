@@ -10,7 +10,7 @@ import zlib
 inventory_header = '''\
 # Sphinx inventory version 2
 # Project: GMT
-# Version: 5.2.1
+# Version: 5.3.1
 # The remainder of this file is compressed with zlib.
 '''.encode('utf-8')
 
@@ -32,7 +32,8 @@ modules = ['gmt', 'gmt5syntax', 'isogmt', 'gmtwhich',
 
            'psconvert', 'psbasemap', 'psclip', 'pscoast', 'pstext',
            'psxy', 'project', 'pscontour', 'pshistogram', 'psimage',
-           'pslegend', 'psmask', 'psrose', 'psscale', 'pswiggle', 'psxyz',
+           'pslegend', 'psmask', 'psrose', 'psscale', 'pssolar',
+           'pswiggle', 'psxyz',
 
            'sample1d', 'spectrum1d', 'sph2grd', 'sphdistance',
            'sphinterpolate', 'sphtriangulate', 'splitxyz', 'surface',
@@ -42,16 +43,16 @@ modules = ['gmt', 'gmt5syntax', 'isogmt', 'gmtwhich',
 supplements = {
     'gshhg' : ['gshhg'],
     'img'   : ['img2google', 'img2grd'],
-    'meca'  : ['pscoupe', 'psmeca', 'pspolar', 'psvelo'],
+    'meca'  : ['pscoupe', 'psmeca', 'pspolar', 'pssac', 'psvelo'],
     'mgd77' : ['mgd77info', 'mgd77magref', 'mgd77path', 'mgd77track',
                'mgd77convert', 'mgd77list', 'mgd77manage', 'mgd77sniffer'],
     'misc'  : ['dimfilter'],
-    'potential': ['gmtgravmag3d', 'gravfft', 'grdgravmag3d', 'grdredpol',
-                  'grdseamount', 'gmtflexure', 'grdflexure', 'talwani2d',
-                  'talwani3d'],
+    'potential': ['gmtgravmag3d', 'gpsgridder', 'gravfft', 'grdgravmag3d',
+                  'grdredpol', 'grdseamount', 'gmtflexure', 'grdflexure',
+                  'talwani2d', 'talwani3d'],
     'segy'  : ['pssegy', 'pssegyz', 'segy2grd'],
-    'spotter': ['backtracker', 'grdpmodeler', 'grdspotter', 'originator',
-                'grdrotater', 'hotspotter', 'rotconverter'],
+    'spotter': ['backtracker', 'gmtpmodeler', 'grdpmodeler', 'grdspotter',
+                'originator', 'grdrotater', 'hotspotter', 'rotconverter'],
     'x2sys' :  ['x2sys_cross', 'x2sys_init', 'x2sys_put', 'x2sys_datalist',
                 'x2sys_list', 'x2sys_report', 'x2sys_binlist', 'x2sys_get',
                 'x2sys_merge', 'x2sys_solve'],

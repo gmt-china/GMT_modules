@@ -15,7 +15,7 @@ filter1d
 ``-E``
     输出时间序列的首尾端数据。默认情况下，首尾两端都会丢失半滤波器宽度的数据点
 
-``-F<type><width>[<mode>]``
+``-F<type><width>[<mode>][+h]``
     设置滤波器类型
 
     滤波器分为两大类，卷积滤波器和非卷积滤波器。 ``<type>`` 用于指定滤波器类型， ``<width>`` 指定滤波器宽度（单位与时间数据相同）。
@@ -40,6 +40,8 @@ filter1d
 
     In the case of **L**\ \|\ **U** it is possible that no data passes
     the initial sign test; in that case the filter will return 0.0.
+
+    该模块默认对数据进行低通滤波，加上 ``+h`` 选项则对数据进行高通滤波。
 
 ``-I<ignore_val>``
     若输出数据等于 ``<ignore_val>`` ，则设置其值为NaN

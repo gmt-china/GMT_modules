@@ -3,7 +3,7 @@
 grdedit
 =======
 
-:官方文档: :ref:`gmt:grdraster`
+:官方文档: :ref:`gmt:grdedit`
 :简介: 修改网格文件的头段或内容
 
 语法
@@ -14,6 +14,9 @@ grdedit
 
 ``-A``
     如有必要，则对网格间隔做微调使得其与数据的范围相兼容。
+
+``-C``
+    从网格文件头段区域中清除GMT命令历史
 
 ``-D<xname>/<yname>/<zname>/<scale>/<offset>/<invalid>/<title>/<remark>``
     修改网格文件的基本信息：
