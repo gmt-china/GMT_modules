@@ -60,5 +60,7 @@ $ evince build/latex/GMT_modules.pdf&
 
 文档的维护可以通过如下几个方式：
 
-1. 在项目主页提交Issue
-2. 修改文档源码并提交Pull Request
+1. 在文档页面的底部评论区留言
+2. 发送相关建议或投稿至 admin@gmt-china.org
+3. 在项目主页提交Issue
+4. 修改文档源码并提交Pull Request
