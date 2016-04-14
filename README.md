@@ -35,20 +35,6 @@
 - dev版在线阅读： http://modules.gmt-china.org
 - dev版离线阅读： [HTML](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.zip) [PDF](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.pdf)
 
-~~~bash
-# Clone至本机
-$ git clone https://github.com/gmt-china/GMT_modules.git GMT_modules
-$ cd GMT_modules
-# 安装Python第三方模块
-$ pip install -r requirements.txt
-# 编译生成HTML
-$ make html
-$ firefox build/html/index.html&
-# 编译生成PDF（需要安装TeXLive 2015）
-$ make xelatexpdf
-$ evince build/latex/GMT_modules.pdf&
-~~~
-
 ## 文档维护
 
 本文档尚有很多不完善之处，因而需要GMT用户一起完善。主要的维护包括如下几个方面：
