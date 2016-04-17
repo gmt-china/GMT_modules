@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/gmt-china/GMT_modules.svg?branch=master)](https://travis-ci.org/gmt-china/GMT_modules)
 [![Release](https://img.shields.io/github/release/gmt-china/GMT_modules.svg)](https://github.com/gmt-china/GMT_docs/releases)
+[![License (CC BY-NC 4.0 CN)](https://img.shields.io/badge/license-CC%20BY--NC%204.0-red.svg)](http://creativecommons.org/licenses/by-nc/4.0/)
 
 欢迎来到 GMT(Generic Mapping Tools) 的世界。
 
@@ -52,3 +53,10 @@
 2. 发送相关建议或投稿至 admin@gmt-china.org
 3. 在项目主页提交Issue
 4. 修改文档源码并提交Pull Request
+
+## 许可协议
+
+本作品采用 [知识共享署名-非商业性使用 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc/4.0/) 进行许可。任何人都可以自由地分享、修改本作品，但必须遵循如下条件：
+
+- 署名：必须提到原作者，提供指向此许可协议的链接，表明是否有做修改
+- 非商业性使用：不能对本作品进行任何形式的商业性使用
