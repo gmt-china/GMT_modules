@@ -18,13 +18,13 @@ psimage
     - 光栅文件的颜色深度可以是1、8、24、32位
     - 光栅文件是通过GDAL读入的，若安装GMT时未配置GDAL，则该命令只能读取Sun光栅文件
 
-``-D[g|j|J|n|x]<refpoint>+e<dpi>+w[-]<width>[/<height>][+j<justify>][+n<nx>[/<ny>]][+o<dx>[/<dy>]]``
+``-D[g|j|J|n|x]<refpoint>+r<dpi>+w[-]<width>[/<height>][+j<justify>][+n<nx>[/<ny>]][+o<dx>[/<dy>]]``
     指定图片的尺寸和位置。
 
     #. ``[g|j|J|n|x]<refpoint>`` 指定底图上的参考量，见 :ref:`doc:embellishments` 一节
     #. ``+j<justify>`` 指定色标上的锚点，默认锚点是 ``BL`` ，见 :ref:`doc:embellishments` 一节
     #. ``+o<dx>[/<dy>]`` 指定参考点的额外偏移量，见 :ref:`doc:embellishments`
-    #. ``+e<dpi>`` 指定图片的DPI以间接指定图片的尺寸
+    #. ``+r<dpi>`` 指定图片的DPI以间接指定图片的尺寸
     #. ``+w[-]<width>[/<height>]`` 直接指定图片的尺寸，若未给定 ``<height>`` 则按照 ``<width>`` 以及原图的横纵比进行缩放；若 ``<width>`` 为负值，则使用其绝对值作为宽度，并使用PS的图片操作符将图片插值到设备的分辨率
     #. ``+n<nx>/<ny>`` 使图片在水平方向重复 ``<nx>`` 次，垂直方向重复 ``<ny>`` 次，若省略 ``<ny>`` 则默认其与 ``<nx>`` 相等，默认值为 ``1/1``
 
