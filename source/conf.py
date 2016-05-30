@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 # GMT模块手册 documentation build configuration file, created by
@@ -56,9 +56,9 @@ source_encoding = 'utf-8'
 master_doc = 'index'
 
 # General information about the project.
-project = 'GMT模块手册'
-copyright = '2014-2016, GMT中文社区'
-author = 'GMT中文社区'
+project = u'GMT模块手册'
+copyright = u'2014-2016, GMT中文社区'
+author = u'GMT中文社区'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -80,7 +80,7 @@ language = 'zh_CN'
 # non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-today_fmt = '%Y年%m月%d日'
+today_fmt = u'%Y年%m月%d日'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -128,9 +128,9 @@ html_theme = 'cloud'
 # documentation.
 html_theme_options = {
     "roottarget": "index",
-    "sidebar_localtoc_title": "目录",
-    "sidebar_prev_title": "上一页",
-    "sidebar_next_title": "下一页",
+    "sidebar_localtoc_title": u"目录",
+    "sidebar_prev_title": u"上一页",
+    "sidebar_next_title": u"下一页",
     "fontcssurl": "//fonts.googleapis.com/css?family=Noticia+Text|Open+Sans|Droid+Sans+Mono",
 }
 
@@ -166,7 +166,7 @@ html_extra_path = ['CNAME']
 # If not None, a 'Last updated on:' timestamp is inserted at every page
 # bottom, using the given strftime format.
 # The empty string is equivalent to '%b %d, %Y'.
-html_last_updated_fmt = '%Y年%m月%d日'
+html_last_updated_fmt = u'%Y年%m月%d日'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -236,8 +236,8 @@ latex_elements = {
         'preamble'   : r'''
             \usepackage{ctex}
             \parindent 2em
-            \setcounter{tocdepth}{3}     % 目录深度
-            \setcounter{secnumdepth}{3}  % 编号深度
+            \setcounter{tocdepth}{3}
+            \setcounter{secnumdepth}{3}
             \hypersetup{
                 CJKbookmarks = true,
                 colorlinks = true,
@@ -245,8 +245,6 @@ latex_elements = {
                 citecolor = blue,
                 urlcolor = blue,
              }
-             \addto\captionsenglish{\renewcommand\listfigurename{插图目录}}
-             \addto\captionsenglish{\renewcommand\listtablename{表格目录}}
         ''',
 }
 
