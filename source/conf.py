@@ -231,7 +231,7 @@ latex_elements = {
         'cmappkg'    : '',
         'fontenc'    : '',
         'releasename': '',
-        'babel'      : r'''\usepackage[english]{babel}''',
+        'babel'      : '',
         'figure_align': 'htp',
         'preamble'   : r'''
             \usepackage{ctex}
