@@ -231,7 +231,7 @@ latex_elements = {
         'cmappkg'    : '',
         'fontenc'    : '',
         'releasename': '',
-        'babel'      : '',
+        'babel'      : r'''\usepackage[english]{babel}''',
         'figure_align': 'htp',
         'preamble'   : r'''
             \usepackage{ctex}
@@ -244,7 +244,7 @@ latex_elements = {
                 linkcolor = blue,
                 citecolor = blue,
                 urlcolor = blue,
-             }
+            }
         ''',
 }
 
