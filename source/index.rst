@@ -11,7 +11,6 @@ GMT 5.2.1模块列表
 - 项目主页： http://modules.gmt-china.org
 - 项目源码： https://github.com/gmt-china/GMT_modules
 - GMT中文参考手册： http://docs.gmt-china.org
-- GMT问答社区：http://forum.gmt-china.org
 
 **文档约定**
 
