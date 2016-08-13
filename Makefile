@@ -6,6 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
+DOCNAME       = GMT_modules
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
@@ -25,11 +26,12 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
-	@echo "  latex      to make LaTeX files"
 	@echo "  xelatexpdf to make LaTeX files and run them through xelatex"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  figures    to update all figures"
-	@echo "  github     to push the generated html to github  "
+	@echo "  latex      to make LaTeX files"
+	@echo "  dummy      to check syntax errors of document sources"
+	@echo "  deploy     to deploy html, zip and PDF to github"
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -44,10 +46,17 @@ linkcheck:
 	@echo "Link check complete; look for any errors in the above output " \
 	      "or in $(BUILDDIR)/linkcheck/output.txt."
 
-github: html
-	@echo "Push build/html to github/gh-pages"
+deploy: html xelatexpdf
+	@echo "Deploy HTML, ZIP and PDF"
 	ghp-import -b gh-pages -n build/html -m "Update at `date +'%Y-%m-%d %H:%M:%S'`"
-	git push github gh-pages:gh-pages
+	git push origin gh-pages:gh-pages --force
+
+	mkdir -p build/doc-dev && cd build && \
+	cp -r html $(DOCNAME)-dev && zip -r doc-dev/$(DOCNAME)-dev.zip $(DOCNAME)-dev && \
+	cp latex/$(DOCNAME).pdf doc-dev/$(DOCNAME)-dev.pdf  && \
+	ghp-import -b doc-dev doc-dev -m 'Update by travis automatically' && \
+	git push origin doc-dev:doc-dev --force
+
 
 ## Builers
 html: figures
@@ -68,7 +77,13 @@ xelatexpdf: figures
 	cd $(BUILDDIR)/latex; latexmk -xelatex -shell-escape -interaction=nonstopmode
 	@echo "xelatex finished; the PDF files are in $(BUILDDIR)/latex."
 
+dummy:
+	$(SPHINXBUILD) -b dummy $(ALLSPHINXOPTS) $(BUILDDIR)/dummy
+	@echo
+	@echo "Build finished. Dummy builder generates no files."
+
+
 release: html xelatexpdf
-	cd $(BUILDDIR) && mv html GMT_modules && zip -r ../GMT_modules.zip GMT_modules/
-	mv $(BUILDDIR)/latex/GMT_modules.pdf .
+	cd $(BUILDDIR) && mv html $(DOCNAME) && zip -r ../$(DOCNAME).zip $(DOCNAME)/
+	mv $(BUILDDIR)/latex/$(DOCNAME).pdf .
 	rm -rf $(BUILDDIR)/*
