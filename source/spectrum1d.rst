@@ -95,6 +95,7 @@ table
 	打印GMT共享文件夹的全路径，并退出。
 
 示例
+----
 1.假设g是重力数据，单位为mGal，空间采样间隔为1.5km。输入其功率谱，用mGal**2-Km表示。
 	gmt spectrum1d data.g -S256 -D1.5 -Ndata
 2.假设你除了有重力数据data.g之外，还有在相同地点测得的地形数据data.t，单位为m。计算二者之间的传输函数。即，data.t是输入，data.g是输出。
