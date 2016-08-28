@@ -33,4 +33,70 @@ name_stem.coh
 
 选项
 ----
+必选项
+----
+-Ssegment_size
+	segment_size是一个2的指数数值，它是为了控制Welch方法中分段平均时的窗口长度。它也决定了功率谱密度的最小频率分辨率和最大频率分辨率，即1.0/(segment_size*dt)和1.0/(2*dt)(即Nyquist频率)。在功率谙密度中的一个标准误差大约为1.0/(n_data/segment_size)，比如segment_size=256,那么就需要25600个数据点去计算一个误差棒的10%。互功率谱误差棒的计算则需要更多数据点，而且是相干性的函数，比较复杂。
 
+----	
+可选项
+table
+	输入文件名。它是ASCII类型的一列数据或两列数据。如果是一列数据文件，就计算自功率谱；如果是两列，就计算互功率谱。如果没有此文件名，spectrum1d将会从屏幕上读取数据。
+
+-C[xycnpago]
+	选择性地输出8个文件，如果不规定其中一个，那么8个文件全部输出。x=xpower,y=ypower,c=cpower,n=npower,p=phase,a=admit,g=gain,o=coh.
+
+-Ddt
+	规定时间序列的时间采样间隔。默认是1.
+
+-L[m|h]
+	不去信号中的线性趋势。默认情况下，在对信号进行变换处理时，会先去掉其中的线性趋势。m去掉其中的均值。h去掉其中的中值。
+
+-N[name_stem]
+	输出文件名的前缀。默认为spectrum。不加此选项，输出的8个文件会合到一个文件里。
+
+-T
+	不让单个分量的结果输出到stdout。
+
+-W
+	规定功率谱是周期的函数，而不是频率的函数。默认是频率的函数。
+
+-bi[ncols][t]
+	选择输入为二进制文件。默认为2列输入。
+-bo[ncols][type]
+	选择输出为二进制文件。默认为2列输出。
+
+-d[i|o]nodata
+	设定输入或输出数据中NaN的值。
+
+-f[i|o]colinfo
+	规定输入或输出文件列信息。
+
+-g[a]x|y|d|X|Y|D|[col]z[+|-]gap[u]
+	规定数据段区分标记和行间断。
+
+-h[i|o][n][+c][+d][+rremark][+rtitle]
+	跳过或生成文件头标记。
+
+-icols[I][sscale][ooffset][,...]
+	选择哪一列为输入数据。
+
+-^ or just -
+	打印这个命令的简短语法介绍。Windows下用-。
+
+-+ or just +
+	打印这个命令的简短语法介绍的扩展版本。
+
+-? or no arguments
+	打印这个命令的完整用法。
+--version
+	打印GMT版本信息，并退出。
+-show-datedir
+	打印GMT共享文件夹的全路径，并退出。
+
+示例
+1.假设g是重力数据，单位为mGal，空间采样间隔为1.5km。输入其功率谱，用mGal**2-Km表示。
+	gmt spectrum1d data.g -S256 -D1.5 -Ndata
+2.假设你除了有重力数据data.g之外，还有在相同地点测得的地形数据data.t，单位为m。计算二者之间的传输函数。即，data.t是输入，data.g是输出。
+	paste data.t data.g | gmt spectrum1d -S256 -D1.5 -Ndata -C > results.txt
+	
