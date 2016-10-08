@@ -121,6 +121,7 @@ GMT 5.2.1模块列表
   #. :doc:`grdfilter`
   #. :doc:`grdfft`
   #. :doc:`splitxyz`
+  #. :doc:`gmtmath`
 
 - 没有整理计划的命令
 
