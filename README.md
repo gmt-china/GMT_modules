@@ -2,11 +2,9 @@
 
 [![Sphinx](https://img.shields.io/badge/Powered%20by-Sphinx-orange.svg)](http://www.sphinx-doc.org/)
 [![Build Status](https://travis-ci.org/gmt-china/GMT_modules.svg?branch=master)](https://travis-ci.org/gmt-china/GMT_modules)
-[![GMT_Release](https://img.shields.io/badge/GMT%20Release-v5.3.1-blue.svg)](http://gmt.soest.hawaii.edu/)
-[![Release](https://img.shields.io/github/release/gmt-china/GMT_modules.svg)](https://github.com/gmt-china/GMT_docs/releases)
 [![License (CC BY-NC 4.0 CN)](https://img.shields.io/badge/license-CC%20BY--NC%204.0-red.svg)](http://creativecommons.org/licenses/by-nc/4.0/)
 
-欢迎来到 GMT(Generic Mapping Tools) 的世界。
+欢迎来到 GMT（Generic Mapping Tools）的世界。
 
 本项目是由GMT中文社区维护的GMT模块手册，介绍GMT中常用的模块的用法。
 
@@ -21,22 +19,16 @@
 
 ## 版本说明
 
-本手册目前与GMT 5.3.1同步。手册有正式发布(release)版和维护开发(dev)版。
+### 最新版本
 
-### release版
+本手册目前与 GMT 5.3.1 同步。
 
-本项目会针对每个GMT版本，发布与之对应的release版文档，版本号与GMT版本相同。release版包括HTML和PDF格式的文档，供用户离线阅读。
+- 在线阅读： http://modules.gmt-china.org
+- 离线阅读：[HTML](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.zip) [PDF](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.pdf)
 
-正式发布版可以从社区主页的 [下载页面](http://gmt-china.org/download/) 或项目主页的 [Release页面](https://github.com/gmt-china/GMT_modules/releases) 中获取。
+### 历史版本
 
-### dev版
-
-文档发布release版之后，即进入日常维护模式，即dev版。dev版的版本号格式为 `当前GMT版本号-dev` 。
-
-文档发布release版之后，即进入日常维护模式，即dev版。dev版的版本号格式为 `当前GMT版本号-dev` 。
-
-- dev版在线阅读： http://modules.gmt-china.org
-- dev版离线阅读： [HTML](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.zip) [PDF](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.pdf)
+- GMT 5.2.1：[HTML](https://github.com/gmt-china/GMT_docs/releases/download/v5.2.1/GMT_docs-v5.2.1-HTML.zip) [PDF](https://github.com/gmt-china/GMT_docs/releases/download/v5.2.1/GMT_docs-v5.2.1.pdf)
 
 ## 文档维护
 
