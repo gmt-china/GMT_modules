@@ -1,7 +1,7 @@
-GMT 5.3.1 模块列表
-##################
+GMT |version| 模块列表
+######################
 
-欢迎来到 GMT (Generic Mapping Tools) 的世界。
+欢迎来到 `GMT <http://gmt.soest.hawaii.edu/projects/gmt>`_ （Generic Mapping Tools）的世界。
 
 本项目是GMT中文社区维护的GMT模块手册。据不完全统计，GMT中约有130个模块，本文档中将介绍其中常用的模块。
 
