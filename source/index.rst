@@ -58,6 +58,7 @@ GMT |version| 模块列表
   - :doc:`grdvector` ：根据两个网格文件绘制矢量场
   - :doc:`grdimage` ：在图上绘制网格数据
   - :doc:`gmtlogo` ：在图上绘制GMT图形logo
+  - :doc:`pssolar`: 计算或/和绘制晨昏线以及民用、航海用以及天文用曙暮光区域
 
 - 信息提取
 
@@ -123,7 +124,6 @@ GMT |version| 模块列表
   #. :doc:`grdfft`
   #. :doc:`splitxyz`
   #. :doc:`gmtmath`
-  #. :doc:`pssolar`
 
 - 没有整理计划的命令
 

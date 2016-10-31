@@ -40,6 +40,8 @@ mathjax_path = 'http://cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-M
 edit_on_github_project = 'gmt-china/GMT_modules'
 edit_on_github_branch = 'master'
 
+suppress_warnings = ['image.nonlocal_uri']
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -283,7 +285,7 @@ latex_additional_files = ['gmt-modules.cls']
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_title = 'GMT v' + version + '模块手册'
+latex_title = 'GMT v' + version + u'模块手册'
 latex_documents = [
     (master_doc, 'GMT_modules.tex', latex_title, author, 'gmt-modules'),
 ]

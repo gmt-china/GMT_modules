@@ -14,9 +14,13 @@ inventory_header = '''\
 # The remainder of this file is compressed with zlib.
 '''.encode('utf-8')
 
-docs = ['configurations', 'embellishments', 'grid-data', 'option-n', 'vectors',
+docs = ['configurations', 'embellishments', 'grid-data', 
+        'vectors',
         'cpt', 'text', 'character-escape', 'special-fonts', 'special-characters',
-        'anchors', 'pen', 'lines',
+        'anchors', 'pen', 'lines', 'fill', 
+
+        'option-binary',
+        'option-n', 
        ]
 
 payload_list = []
