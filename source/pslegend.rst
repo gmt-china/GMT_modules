@@ -12,13 +12,13 @@ pslegend
 ``-C<dx>/<dy>``
     设置图例边框与内部图例之间的空白，默认值为 ``4p/4p``
 
-``-D[g|j|J|n|x]<refpoint>+w<length>/<width>[+j<justify>][+l<spacing>][+o<dx>[/<dy>]]``
+``-D[g|j|J|n|x]<refpoint>+w<width>[/<height>][+j<justify>][+l<spacing>][+o<dx>[/<dy>]]``
     设置图例的位置和大小
 
     - ``[g|j|J|n|x]<refpoint>`` 指定底图上的参考点，见 :ref:`doc:embellishments`
+    - ``+w<width>/<height>`` 用于指定图例框的尺寸，若 ``<height>`` 未指定或取0，则GMT会自动估算所需的高度
     - ``+j<justify>`` 指定图例上的锚点，默认锚点是 ``BL`` ，见 :ref:`doc:embellishments` 一节
     - ``+o<dx>/<dy>`` 指定参考点的额外偏移量
-    - ``+w<length>/<width>`` 用于指定图例框的尺寸，若 ``<height>`` 未指定或取0，则GMT会自动估算所需的高度
     - ``+l<spacing>`` 行间距因子，默认值为1.1，则当前字体大小的1.1倍
 
     该选项几个比较有用的用法是：
