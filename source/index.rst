@@ -38,6 +38,20 @@ GMT |version| 模块列表
   - :doc:`gmt` ：GMT主程序
   - :doc:`isogmt` ：在“隔离模式”下运行GMT命令或脚本
   - :doc:`gmt5syntax` ：将旧的GMT脚本修改成新的 ``gmt <module>`` 语法
+  - :doc:`gmt-config` ：返回 GMT 动态函数库的基本信息
+
+- 信息提取
+
+  - :doc:`gmtdefaults` ：列出所有GMT参数的当前值
+
+- 绘制 1D 数据
+
+  - :doc:`pssolar` ：计算或/和绘制晨昏线以及民用、航海用以及天文用曙暮光区域
+  - :doc:`pssac` ：在地图上绘制 SAC 格式的地震波形数据
+
+- 绘制 2D 数据
+
+  - :doc:`gmtlogo` ：在图上绘制GMT图形logo
 
 - 绘制1D和2D数据
 
@@ -57,14 +71,11 @@ GMT |version| 模块列表
   - :doc:`pscoupe` ：绘制震源机制解的剖面图
   - :doc:`grdvector` ：根据两个网格文件绘制矢量场
   - :doc:`grdimage` ：在图上绘制网格数据
-  - :doc:`gmtlogo` ：在图上绘制GMT图形logo
-  - :doc:`pssolar`: 计算或/和绘制晨昏线以及民用、航海用以及天文用曙暮光区域
 
 - 信息提取
 
   - :doc:`gmtget` ：列出单个或多个GMT参数的当前值
   - :doc:`gmtset` ：修改单个或多个GMT参数的值
-  - :doc:`gmtdefaults` ：列出所有GMT参数的当前值
   - :doc:`gmtinfo` ：从表数据中提取信息
   - :doc:`grdinfo` ：从网格文件中提取基本信息
   - :doc:`gmtselect` ：根据多个准则筛选数据
@@ -105,7 +116,6 @@ GMT |version| 模块列表
 
 - 计划整理的命令
 
-  #. :doc:`pssac`
   #. :doc:`grdtrack`
   #. :doc:`makecpt`
   #. :doc:`grd2cpt`
@@ -204,6 +214,7 @@ GMT |version| 模块列表
    filter1d
    fitcircle
    gmt
+   gmt-config
    gmt2kml
    gmt5syntax
    gmtconnect

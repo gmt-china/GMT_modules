@@ -8,7 +8,7 @@ gmt5syntax
 
 ``gmt5syntax`` 是一个Perl脚本，作用是在命令前加上 ``gmt`` 使得旧版本的语法变成新版本语法。该脚本位于 ``${GMTHOME}/share/tools`` 目录。
 
-语法
+用法
 ----
 
 ::
