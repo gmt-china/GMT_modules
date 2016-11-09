@@ -48,10 +48,14 @@ GMT |version| 模块列表
 
   - :doc:`pssolar` ：计算或/和绘制晨昏线以及民用、航海用以及天文用曙暮光区域
   - :doc:`pssac` ：在地图上绘制 SAC 格式的地震波形数据
+  - :doc:`psclip` ：打开或关闭多边形裁剪路径
 
 - 绘制 2D 数据
 
   - :doc:`gmtlogo` ：在图上绘制GMT图形logo
+  - :doc:`psimage` ：将EPS或光栅图片放在图上
+
+**以下模块需要重新检查**
 
 - 绘制1D和2D数据
 
@@ -60,8 +64,6 @@ GMT |version| 模块列表
   - :doc:`psxy` ：在图上绘制线段、多边形和符号
   - :doc:`pstext` ：在图上写文本
   - :doc:`psscale` ：在图上绘制灰色或彩色色标
-  - :doc:`psclip` ：打开或关闭多边形裁剪路径
-  - :doc:`psimage` ：将图片或EPS文件放在地图上
   - :doc:`pslegend` ：绘制图例
   - :doc:`pshistogram` ：统计并绘制直方图
   - :doc:`psrose` ：绘制极坐标下的直方图（sector图、rose图或windrose图）
@@ -110,6 +112,7 @@ GMT |version| 模块列表
 
   - :doc:`kml2gmt` ：将Google Earth的KML文件转换为GMT表数据
   - :doc:`psconvert` ：将GMT生成的PS文件转换为其他图片格式
+  - :doc:`ps2raster <psconvert>` ：将GMT生成的PS文件转换为其他图片格式
   - :doc:`grd2xyz` ：将网格文件转换成表数据
   - :doc:`xyz2grd` ：将XYZ数据或Z数据转换成网格文件
   - :doc:`grd2rgb` ：将网格文件、原始RGB文件、SUN光栅文件转换成R/G/B三个网格文件

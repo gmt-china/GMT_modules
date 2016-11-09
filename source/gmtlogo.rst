@@ -21,7 +21,7 @@ gmtlogo
 ``-D[g|j|J|n|x]<refpoint>[+w<width>][+j<justify>][+o<dx>[/<dy>]]``
     设置logo的位置
 
-    - ``[g|j|J|n|x]<refpoint>`` 设置底图上的参考点， :ref:`doc:embellishments` 一节
+    - ``[g|j|J|n|x]<refpoint>`` 设置底图上的参考点，见 :ref:`doc:embellishments` 一节
     - ``+w<width>`` 设置logo的宽度
     - ``+j<justify>`` 设置logo上的锚点，见 :ref:`doc:embellishments` 一节
     - ``+o<dx>[/<dy>]`` 设置参考点的额外偏移量，见 :ref:`doc:embellishments` 一节
@@ -29,6 +29,7 @@ gmtlogo
 ``-F[+c<clearance(s)>][+g<fill>][+i[[<gap>/]<pen>]][+p[<pen>]][+r[<radius>]][+s[<dx>/<dy>/][<fill>]]``
     在 logo 后加一个背景面板，见 :ref:`doc:embellishments` 一节
 
+    - ``+p<pen>`` 面板边框的画笔属性
     - ``+g<fill>`` 面板填充色
     - ``+c<clearance>`` 设置 logo 与面板边框之间空白区域的大小
     - ``+i<gap>/<pen>`` 为背景面板加上额外的内边框

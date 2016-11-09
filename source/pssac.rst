@@ -10,7 +10,7 @@ pssac
 
 .. note::
 
-   pssac 模块修改自原 pssac 与 pssac2，其功能类似，但语法不同。 
+   pssac 模块修改自原 pssac 与 pssac2，其功能类似，但语法不同。
 
 pssac 实现波形绘制的步骤是：
 
@@ -93,7 +93,7 @@ pssac 实现波形绘制的步骤是：
 
     - ``<size>[<unit>]`` 将所有波形在地图上的高度缩放到 ``<size>[<unit>]`` ，其中 ``<unit>`` 可以取 ``i|c|p`` ，默认单位由 ``PROJ_LENGTH_UNIT`` 控制。
     - ``<size>/<alpha>``
-    
+
       - 若 ``<alpha>`` 小于0，则所有波形使用相同的比例因子。比例因子由第一个波形决定，第一个波形将被缩放到 ``<size>[<unit>]``
       - 若 ``<alpha>`` 等于0，则将所有波形乘以 ``<size>`` ，此时不允许有单位
       - 若 ``<alpha>`` 大于0，则将所有波形乘以 ``<size>*r^<alpha>`` ，其中 r 是以 km 为单位的距离
@@ -116,18 +116,17 @@ pssac 实现波形绘制的步骤是：
 ``-W<pen>``
     设置波形的画笔属性
 
-
 示例
 ----
 
 利用 SAC 的命令 ``funcgen seismogram`` 生成了波形，想要绘制单个波形，并分别为正负部分涂色::
-    
+
     gmt pssac seis.SAC -JX10c/5c -R9/20/-2/2 -Baf -Fr -Gp+gblack -Gn+gred > single.ps
 
 利用 SAC 命令 ``datagen sub tel *.z`` 生成多个波形，将其绘制在距离剖面上::
 
     gmt pssac *.z -R200/1600/12/45 -JX15c/5c -Bx200+l'T(s)' -By5+lDegree -BWSen \
-         -Ed -M1.5c -W0.5p,red > distance_profile.ps 
+         -Ed -M1.5c -W0.5p,red > distance_profile.ps
 
 利用 SAC 命令 ``datagen sub tel *.z`` 生成多个波形，将其绘制在地图上::
 

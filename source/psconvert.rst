@@ -4,29 +4,30 @@ psconvert
 =========
 
 :官方文档: :ref:`gmt:psconvert`
-:简介: 将GMT生成的PS文件转换为其他图片格式
+:简介: 将 GMT 生成的 PS/EPS 文件转换为其他图片格式
 
-支持BMP、EPS、JPEG、PDF、PNG、PPM、SVG、TIFF格式。原名为 ``ps2raster`` ，v5.2.1版本起更名为 ``psconvert``
+.. note::
 
-最小示例
+   本模块原名为 ``ps2raster`` ，v5.2.1 版本起更名为 ``psconvert``
+
+该模块通过调用 ghostscrip 将 PS/EPS 文件转换为其他图片格式，包括BMP、EPS、JPEG、PDF、PNG、PPM、SVG、TIFF 格式。
+
+必须选项
 --------
-
-如下命令会将PS文件转换成JPG格式::
-
-    gmt psconvert test.ps
-    gmt psconvert test1.ps test2.ps map*.ps
-
-输出文件的文件名与原文件相同，仅后缀不同。
-
-选项
-----
-
 ``psfiles``
-    要转换格式的PS文件名
+    要转换格式的 PS 文件名
 
     默认情况下，转换后的文件与转换前的文件有相同的文件名，文件后缀由文件格式决定
 
-``-A[u][<margins>][-][+g<paint>][+p<pen>][+r][+s[m]|S<width>[<u>]/<height>[<u>]]``
+    如下命令会将PS文件转换成JPG格式::
+
+        gmt psconvert test.ps
+        gmt psconvert test1.ps test2.ps map*.ps
+
+可选选项
+--------
+
+``-A[u][<margins>][-][+p[<pen>]][+g<fill>][+r][+s[m]|S<width>[<u>]/<height>[<u>]]``
     对输出的图片做裁边
 
     默认情况下，转换得到的图片的大小由PS文件的纸张尺寸决定。通常画图的时候是不会把一张A4纸画满的，所以在图片周围就会出现多余的白色部分。
