@@ -55,6 +55,21 @@ GMT |version| 模块列表
   - :doc:`gmtlogo` ：在图上绘制GMT图形logo
   - :doc:`psimage` ：将EPS或光栅图片放在图上
 
+- 1D 数据处理
+
+- 2D 数据处理
+
+  - :doc:`grdpaste` ：将两个网格沿着其共同边界拼接成一个文件
+  - :doc:`grdclip` ：对网格文件的Z值做裁剪
+
+- 格式转换
+
+  - :doc:`kml2gmt` ：将Google Earth的KML文件转换为GMT表数据
+
+- 信息提取
+
+  - :doc:`gmtget` ：列出单个或多个GMT参数的当前值
+
 **以下模块需要重新检查**
 
 - 绘制1D和2D数据
@@ -76,9 +91,9 @@ GMT |version| 模块列表
 
 - 信息提取
 
-  - :doc:`gmtget` ：列出单个或多个GMT参数的当前值
   - :doc:`gmtset` ：修改单个或多个GMT参数的值
   - :doc:`gmtinfo` ：从表数据中提取信息
+  - :doc:`xyz2grd <gmtinfo>`: 已改名为 ``gmtinfo``
   - :doc:`grdinfo` ：从网格文件中提取基本信息
   - :doc:`gmtselect` ：根据多个准则筛选数据
   - :doc:`gmtwhich` ：返回指定文件的完整路径
@@ -97,9 +112,7 @@ GMT |version| 模块列表
   - :doc:`grdedit` ：修改网格文件的头段或内容
   - :doc:`grdcut` ：从一个网格文件中裁剪出一个子区域
   - :doc:`grdblend` ：将多个部分重叠的网格文件合并成一个网格文件
-  - :doc:`grdpaste` ：将两个网格沿着其共同边界拼接成一个文件
   - :doc:`grdraster` ：从二进制数据中提取子区域并保存为GMT网格文件
-  - :doc:`grdclip` ：对网格文件的Z值做裁剪
   - :doc:`grdlandmask` ：根据海岸线数据创建陆地-海洋的mask网格文件
   - :doc:`grdtrend` ：拟合网格的趋势面并计算残差
   - :doc:`grdsample` ：对网格文件做重采样
@@ -110,7 +123,6 @@ GMT |version| 模块列表
 
 - 格式转换
 
-  - :doc:`kml2gmt` ：将Google Earth的KML文件转换为GMT表数据
   - :doc:`psconvert` ：将GMT生成的PS文件转换为其他图片格式
   - :doc:`ps2raster <psconvert>` ：将GMT生成的PS文件转换为其他图片格式
   - :doc:`grd2xyz` ：将网格文件转换成表数据

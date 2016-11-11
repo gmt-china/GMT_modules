@@ -6,11 +6,11 @@ gmtget
 :官方文档: :ref:`gmt:gmtget`
 :简介: 列出单个或多个GMT参数的当前值
 
-选项
-----
+必须选项
+--------
 
 ``<PARAMETER>``
-    GMT的参数名，见 :ref:`doc:configurations` 。
+    GMT的参数名，见 :ref:`doc:configurations`
 
     ``gmtset`` 后直接跟一个或多个参数名::
 
@@ -20,10 +20,13 @@ gmtget
         $ gmt get MAP_GRID_CROSS_SIZE_PRIMARY MAP_GRID_CROSS_SIZE_SECONDARY
         24p,Helvetica,black 16p,Helvetica,black fancy
 
+可选选项
+--------
+
 ``-G<defaultsfile>``
     读取指定的配置文件
 
-    该命令寻找配置文件 ``gmt.conf`` 时的搜索优先顺序为::
+    默认情况下，该模块会按照如下优先级寻找配置文件 ``gmt.conf`` ::
 
         ./gmt.conf  > ~/.gmt/gmt.conf > ~/gmt.conf > ${GMTHOME}/share/conf/gmt.conf
 
