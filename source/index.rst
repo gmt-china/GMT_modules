@@ -43,6 +43,7 @@ GMT |version| 模块列表
 - 信息提取
 
   - :doc:`gmtdefaults` ：列出所有GMT参数的当前值
+  - :doc:`gmtget` ：列出单个或多个GMT参数的当前值
 
 - 绘制 1D 数据
 
@@ -61,14 +62,13 @@ GMT |version| 模块列表
 
   - :doc:`grdpaste` ：将两个网格沿着其共同边界拼接成一个文件
   - :doc:`grdclip` ：对网格文件的Z值做裁剪
+  - :doc:`grdconvert` ：在不同的网格格式之间互相转换
 
 - 格式转换
 
   - :doc:`kml2gmt` ：将Google Earth的KML文件转换为GMT表数据
+  - :doc:`grdconvert` ：在不同的网格格式之间互相转换
 
-- 信息提取
-
-  - :doc:`gmtget` ：列出单个或多个GMT参数的当前值
 
 **以下模块需要重新检查**
 
@@ -119,7 +119,6 @@ GMT |version| 模块列表
   - :doc:`grdvolume` ：计算网格数据中某个等值线所包围的表面积和体积
   - :doc:`grdproject` ：对网格数据做地图变换和逆变换
   - :doc:`grdmask` ：根据多边形数据或点数据创建mask网格文件
-  - :doc:`grdconvert` ：在不同的网格格式之间互相转换
 
 - 格式转换
 

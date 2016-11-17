@@ -6,19 +6,19 @@ grdconvert
 :官方文档: :ref:`gmt:grdconvert`
 :简介: 在不同的网格格式之间互相转换
 
-选项
-----
+必须选项
+--------
 
-``<ingrdfile>``
-    要读入的网格文件，文件名格式见 :ref:`doc:grid-data`
+``<ingird>[=<id>[/<scale>/<offset>[/<nan>]]]``
+    要读入的网格文件。其他参数的含义见 :ref:`doc:grid-data`
 
-``<outgrdfile>``
-    要写入的网格文件，文件名格式见 :ref:`doc:grid-data`
+``<outgrid>[=<id>[/<scale>/<offset>[/<nan>]][:<driver>[/dataType]]]``
+    要写入的网格文件。其他参数的含义见 :ref:`doc:grid-data`
 
 ``-N``
-    不将GMT头段结构写到文件中。该选项用于写一个无头段的native的二进制文件，该文件可直接用于 :doc:`grdraster` 命令中。
+    如果你想要将一个网格文件转换为 native 二进制文件供 :doc:`grdraster` 模块直接使用，则需要使用 ``-N`` 选项，以保证不将 GMT 头段结构写到文件中。
 
-选项
+示例
 ----
 
 从一个三维网格文件中提取第二层数据::
