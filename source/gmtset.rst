@@ -10,6 +10,9 @@ gmtset
 
 若想要参数修改仅对某个命令有效，应该在该命令上使用 ``--<PARAMETER>=<value>`` 语法。
 
+必须选项
+--------
+
 ``<PARAMETER>=<value>``
     要修改的GMT参数名 ``<PARAMETER>`` 以及想要设置的值 ``<value>``
 
@@ -23,11 +26,14 @@ gmtset
 
         gmt gmtset FONT_ANNOT_PRIMARY=12p,Helvetica MAP_GRID_CROSS_SIZE_PRIMARY=0.2c
 
+可选选项
+--------
+
 ``-C``
     将当前目录下的GMT4配置文件 ``.gmtdefaults4`` 转换为GMT5所使用的 ``gmt.conf`` 文件，并保留GMT4配置文件。
 
 ``-D[s|u]``
-    默认在当前目录下的配置文件的基础上修改参数值，该选项使得在系统配置文件的基础上修改参数值。
+    默认在当前目录下的配置文件的基础上修改参数值，该选项会基于系统配置文件修改参数值。
 
     #. ``-D`` ：使用GMT编译过程中指定的默认参数文件，即 ``${GMT}/share/conf/gmt.conf``
     #. ``-Du`` ：使用US单位制下的默认参数文件，即 ``${GMT}/share/conf/gmt_US.conf``
