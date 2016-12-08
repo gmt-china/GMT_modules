@@ -114,7 +114,7 @@ pslegend
 ``S [dx1 symbol size fill pen] [dx2 text]``
     在图例中绘制符号
 
-    #. ``symbol`` 指定了符号类型， 见 :doc:`psxy` 命令
+    #. ``symbol`` 指定要绘制的符号类型， 见 :doc:`psxy` 命令的 ``-S`` 选项。若 ``symbol`` 设置为 ``-`` 则表示绘制线段
     #. ``dx1`` 是符号中心与左边界的距离
     #. ``dx2`` 是 ``text`` 与左边界的距离
     #. ``text`` 的字体由参数 ``FONT_ANNOT_PRIMARY`` 控制
@@ -123,7 +123,6 @@ pslegend
     #. ``dx1`` 除了可以指定距离，还可以使用 ``L|C|R`` 表示符号在当前列的对齐方式
     #. 若S记录中无其他参数，则直接调至下一列
     #. 若 ``symbol`` 取为 ``f|q|v`` ，则可以在 ``symbol`` 后加上额外的子选项
-    #. 符号 ``-`` 可以用于绘制线段
     #. 某些符号可能需要指定多个size，将多个size用逗号分隔作为size即可
 
 ``T paragraph-text``
