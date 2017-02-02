@@ -30,7 +30,7 @@ mapproject
 
 -I选项表明做投影逆变换，即从XY坐标中得到经纬度信息::
 
-    $ echo 3.5 7.6841597874 | mapproject -R100/160/0/80 -JM10c
+    $ echo 3.5 7.6841597874 | mapproject -R100/160/0/80 -JM10c -I
     121  42
 
 -Q选项
