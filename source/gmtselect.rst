@@ -68,8 +68,7 @@ gmtselect
 ``-D[a|f|h|i|l|c][+]``
     选择海岸线数据的精度，仅与 ``-N`` 选项一起使用有效。见 :doc:`pscoast` 中 ``-D`` 选项的介绍。
 
-``-N<wet>/<dry>``
-``-N<ocean>/<land>/<lake>/<island>/<pond>``
+``-N<wet>/<dry>`` ``-N<ocean>/<land>/<lake>/<island>/<pond>``
     其中每一项都可以取为 ``s|k`` ，分别表示skip或keep，即跳过或保留该地理特征内的记录。默认值为 ``-Ns/k`` ，即保留所有陆地上的记录。
 
 准则6

@@ -21,7 +21,7 @@
 
 ### 最新版本
 
-本手册目前与 GMT 5.3.1 同步。
+本手册目前与 GMT 5.3.2 同步。
 
 - 在线阅读： http://modules.gmt-china.org
 - 离线阅读：[HTML](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.zip) [PDF](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.pdf)
