@@ -28,6 +28,7 @@
 
 ### 历史版本
 
+- GMT 5.3.1：[HTML](https://github.com/gmt-china/GMT_modules/releases/download/v5.3.1/GMT_modules-v5.3.1-HTML.zip) [PDF](https://github.com/gmt-china/GMT_modules/releases/download/v5.3.1/GMT_modules-v5.3.1.pdf)
 - GMT 5.2.1：[HTML](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-v5.2.1-HTML.zip) [PDF](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-v5.2.1.pdf)
 
 ## 文档维护
