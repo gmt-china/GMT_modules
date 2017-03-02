@@ -49,11 +49,11 @@ grdmask
 示例
 ----
 
-多边形内和边界上的节点值为1，外部值为0::
+多边形内和边界上的节点值为0，外部值为1::
 
     gmt grdmask coastline_*.xy -R-60/-40/-40/-30 -I5m -N1/0/0 -Gland_mask.nc=nb -V
 
-数据点周围50千米范围的节点值为1，其余为0::
+数据点周围50千米范围的节点值为1，其余为NaN::
 
     gmt grdmask data.xyz -R-60/-40/-40/-30 -I5m -NNaN/1/1 -S50k -Gdata_mask.nc=nb -V
 
