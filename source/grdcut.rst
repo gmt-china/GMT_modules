@@ -71,8 +71,6 @@ grdcut
 - :doc:`grdpaste`
 - :doc:`grdsample`
 
-
-
 .. TODO::
 
    1. 查看源码确认 -Z 选项的解释是否正确
