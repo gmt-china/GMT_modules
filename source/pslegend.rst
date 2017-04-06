@@ -92,12 +92,12 @@ pslegend
     #. ``justification`` 为图片的对齐方式
 
 ``L fontsize|- font|- justification label``
-    在图例中绘制标签。
+    在图例中某列增加指定的文字
 
-    #. ``label`` 为要绘制的标签
+    #. ``label`` 为显示的文本
     #. ``fontsize`` 为字号
     #. ``font`` 为字体号
-    #. ``justification`` 为对齐方式，可以取 ``L|C|R``
+    #. ``justification`` 为对齐方式，可以取 ``L|C|R`` ，分别表示左对齐、居中对齐和右对齐
     #. ``-`` 表示使用默认的文字大小以及默认字体 ``FONT_TITLE``
 
 ``M slon|- slat length [+f][+l[label]][+u] [-Fparam] [-Rw/e/s/n -Jparam]``
