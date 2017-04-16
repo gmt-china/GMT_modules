@@ -4,7 +4,7 @@ gmtdefaults
 ===========
 
 :官方文档: :ref:`gmt:gmtdefaults`
-:简介: 列出所有GMT参数的值
+:简介: 列出所有GMT参数的当前值
 
 该模块会列出GMT参数的当前值或系统默认值。
 
@@ -31,7 +31,7 @@ gmtdefaults
     gmt gmtdefaults -D > gmt.conf
 
 搜索与 LABEL 有关的参数的值::
-    
+
     gmt gmtdefaults | grep LABEL
 
 BUGS

@@ -43,6 +43,8 @@ GMT |version| 模块列表
 - 参数设置
 
   - :doc:`gmtset` ：修改单个或多个GMT参数的值
+  - :doc:`gmtget` ：列出单个或多个GMT参数的当前值
+  - :doc:`gmtdefaults` ：列出所有GMT参数的当前值
 
 - 绘制 1D 数据
 
@@ -62,8 +64,6 @@ GMT |version| 模块列表
 
 **以下模块需要重新检查**
 
-  - :doc:`gmtdefaults` ：列出所有GMT参数的当前值
-  - :doc:`gmtget` ：列出单个或多个GMT参数的当前值
   - :doc:`grdinfo` ：从网格文件中提取基本信息
   - :doc:`gmtinfo` ：从表数据中提取信息
   - :doc:`minmax <gmtinfo>`: 已改名为 ``gmtinfo``
