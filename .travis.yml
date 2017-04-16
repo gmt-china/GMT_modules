@@ -20,7 +20,7 @@ install:
 script:
     - make linkcheck
     - make html
-    - make xelatexpdf
+    - make latexpdf
     - make pre-deploy
 
 after_success:
