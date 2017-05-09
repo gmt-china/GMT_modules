@@ -19,18 +19,10 @@
 
 ## 版本说明
 
-### 最新版本
-
-本手册目前与 GMT 5.3.3 同步。
+本手册目前与 GMT 5.4.0 同步，历史版本见 [release](https://github.com/gmt-china/GMT_modules/releases) 页面。
 
 - 在线阅读： http://modules.gmt-china.org
 - 离线阅读：[HTML](http://modules.gmt-china.org/GMT_modules.zip) [PDF](http://modules.gmt-china.org/GMT_modules.pdf)
-
-### 历史版本
-
-- GMT 5.3.2：[HTML](https://github.com/gmt-china/GMT_modules/releases/download/v5.3.2/GMT_modules-v5.3.2-HTML.zip) [PDF](https://github.com/gmt-china/GMT_modules/releases/download/v5.3.2/GMT_modules-v5.3.2.pdf)
-- GMT 5.3.1：[HTML](https://github.com/gmt-china/GMT_modules/releases/download/v5.3.1/GMT_modules-v5.3.1-HTML.zip) [PDF](https://github.com/gmt-china/GMT_modules/releases/download/v5.3.1/GMT_modules-v5.3.1.pdf)
-- GMT 5.2.1：[HTML](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-v5.2.1-HTML.zip) [PDF](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-v5.2.1.pdf)
 
 ## 文档维护
 
