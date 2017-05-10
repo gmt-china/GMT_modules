@@ -69,7 +69,7 @@ author = u'GMT中文社区'
 # built documents.
 #
 # The short X.Y version.
-version = '5.4.0'
+version = '5.4.1'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -325,6 +325,6 @@ latex_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
-    'gmt': ('http://gmt.soest.hawaii.edu/doc/5.4.0/', 'gmt.inv'),
+    'gmt': ('http://gmt.soest.hawaii.edu/doc/5.4.1/', 'gmt.inv'),
     'doc': ('http://docs.gmt-china.org/', 'docs.inv')
 }
