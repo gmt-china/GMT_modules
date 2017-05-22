@@ -6,9 +6,6 @@ grdedit
 :官方文档: :ref:`gmt:grdedit`
 :简介: 修改网格文件的头段或内容
 
-功能
-----
-
 该模块具有如下功能：
 
 #. 从2D网格文件中读入头段信息，并使用命令行中的值替换头段信息
@@ -31,23 +28,12 @@ grdedit
 ``-C``
     清除网格文件头段区中生成该网格所使用的命令历史
 
-``-D<xname>/<yname>/<zname>/<scale>/<offset>/<invalid>/<title>/<remark>``
-    修改网格文件的基本信息：
-
-    - ``<xname>`` X变量名，格式为 ``varname [unit]`` ，比如 ``"distance [km]"``
-    - ``<scale>`` 读入网格数据后要乘以的因子，默认值为 1
-    - ``<offset>`` 读入数据后并乘以因子后要加入的常数，默认值为 0
-    - ``<invalid>`` 指定特定的数用于表示该节点处无有效值，默认为NaN
-    - ``<title>`` 网格文件的标题
-    - ``<remark>`` 网格文件的注释信息
-
-    若想要某些值不变，可直接将该字段留空，但 ``/`` 不可省略。若 ``/`` 是某个值的
-    一部分，则可以用其他符号作为分隔符，此时需要在开头和结尾多加一个该符号，
-    比如 ``-D:xname:yname:zname:scale:offset:invalid:title:remark:`` 。
+.. include:: explain_-D_cap.rst_
+..
 
     假设数据的范围是 ``300/310/10/30`` ，现修改数据的范围以及标题::
 
-        gmt grdedit data.nc -R-60/-50/10/30 -D//////"Gravity Anomalies"
+        gmt grdedit data.nc -R-60/-50/10/30 -D+t"Gravity Anomalies"
 
 ``-E[a|h|l|r|t|v]``
     对网格进行处理，该选项与除 ``-G`` 外的其他选项不兼容
@@ -58,6 +44,10 @@ grdedit
     - ``-Er`` 顺时针将网格旋转90度
     - ``-Et`` 对网格进行转置（想象成一个二维矩阵），默认使用该选项
     - ``-Ev`` 垂直旋转网格（从上到下）
+
+    将网格数据逆时针旋转90度，并将旋转后的网格写到新网格文件中::
+
+        gmt grdedit oblique.nc -El -Goblique_rot.nc
 
 ``-G<outgrid>``
     默认情况下，该命令会直接修改并覆盖原始网格文件，使用该选项则将修改后的网格
@@ -91,6 +81,3 @@ grdedit
 示例
 ----
 
-将网格数据逆时针旋转90度，并将旋转后的网格写到新网格文件中::
-
-    gmt grdedit oblique.nc -El -Goblique_rot.nc

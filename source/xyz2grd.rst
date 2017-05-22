@@ -40,18 +40,7 @@ xyz2grd
     - ``-An`` 将落在该节点内的数据数目作为该节点值，该选项仅要求输入数据中有XY值
     - ``-Az`` 将落在该节点内的所有值的和作为节点值
 
-``-D<xname>/<yname>/<zname>/<scale>/<offset>/<invalid>/<title>/<remark>``
-    设置网格文件中的一些辅助信息
-
-    - ``<xname>/<yname>/<zname>`` 变量名及其单位，比如 ``"distance [km]"``
-    - ``<scale>`` 读入网格后要乘以的缩放因子（默认值为1）
-    - ``<offset>`` 乘以缩放因子后要加上的偏移量（默认值为0）
-    - ``<invaild>`` 用于表示数据缺失的值（默认值为NaN）
-    - ``<title>/<remark>`` 任意信息
-
-    若需要保持某些值不变，可以直接将该字段留空。若想要在某个字段中使用字符 ``/`` ，则必须使用其他字符（不能是字母、数字、等号）作为分隔符，比如::
-
-    -D:<xname>:<yname>:<zname>:<scale>:<offset>:<invalid>:<title>:<remark>:
+.. include:: explain_-D_cap.rst_
 
 ``-S[<zfile>]``
     对输入的Z文件做字节序转换并输出到标准输出或保存到文件 ``<zfile>`` 中。该选项不会只做字节序转换，不生成网格文件。该选项必须与 ``-Z`` 选项连用。

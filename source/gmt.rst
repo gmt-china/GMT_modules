@@ -16,6 +16,15 @@ GMT的所有功能通过如下语法调用::
 
     gmt psbasemap -JX10c/10c -R0/20/0/5 -Bafg > test.ps
 
+gmt还提供了一个特殊的模块，名为 ``clear`` ::
+
+    gmt clear history|conf|cache|all
+
+- `gmt clear history`: 删除当前目录下的 ``gmt.history`` 文件
+- `gmt clear conf`: 删除当前目录下的 ``gmt.conf`` 文件
+- `gmt clear cache`: 删除用户目录（ ``~/.gmt`` ）下的缓存文件夹
+- `gmt clear all`: 清理 history、conf 和 cache
+
 除此之外，还有一些其他选项可以使用：
 
 - ``gmt --help`` ：列出GMT提供的所有模块名及其功能
