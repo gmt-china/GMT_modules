@@ -1,3 +1,3 @@
-sphinx>=1.5.0
+sphinx==1.5.6
 ghp-import
 cloud_sptheme
