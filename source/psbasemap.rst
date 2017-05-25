@@ -112,7 +112,7 @@ psbasemap
 
 下面的脚本展示了一种insert box的用法：
 
-.. literalinclude:: ../scripts/psbasemap_ex1.sh
+.. literalinclude:: /scripts/psbasemap_ex1.sh
    :language: bash
 
 .. figure:: /images/psbasemap_ex1.*
@@ -123,7 +123,7 @@ psbasemap
 
 下面的脚本绘制了另一种不同的insert box：
 
-.. literalinclude:: ../scripts/psbasemap_ex2.sh
+.. literalinclude:: /scripts/psbasemap_ex2.sh
    :language: bash
 
 .. figure:: /images/psbasemap_ex2.*
@@ -134,7 +134,7 @@ psbasemap
 
 下面的脚本绘制了磁场玫瑰图：
 
-.. literalinclude:: ../scripts/psbasemap_ex4.sh
+.. literalinclude:: /scripts/psbasemap_ex4.sh
    :language: bash
 
 .. figure:: /images/psbasemap_ex4.*

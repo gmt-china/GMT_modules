@@ -100,7 +100,7 @@ psvelo
 示例
 ----
 
-.. literalinclude:: ../scripts/psvelo_ex1.sh
+.. literalinclude:: /scripts/psvelo_ex1.sh
    :language: bash
 
 .. figure:: /images/psvelo_ex1.*
@@ -109,7 +109,7 @@ psvelo
 
    psvelo示例图1
 
-.. literalinclude:: ../scripts/psvelo_ex2.sh
+.. literalinclude:: /scripts/psvelo_ex2.sh
    :language: bash
 
 .. figure:: /images/psvelo_ex2.*

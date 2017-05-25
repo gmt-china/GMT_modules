@@ -151,7 +151,7 @@ pstext
 
     段头记录后即为要显示在图上的文本，每段数据之间用空行分隔。
 
-    .. literalinclude:: ../scripts/pstext_-M.sh
+    .. literalinclude:: /scripts/pstext_-M.sh
        :language: bash
 
     .. figure:: /images/pstext_-M.*

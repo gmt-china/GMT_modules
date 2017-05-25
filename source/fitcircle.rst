@@ -39,7 +39,7 @@ fitcircle
 
 如下命令，用两种计算方法拟合了数据的大圆弧路径和小圆弧路径，并借助 :doc:`project` 生成路径坐标。
 
-.. literalinclude:: ../scripts/fitcircle_ex1.sh
+.. literalinclude:: /scripts/fitcircle_ex1.sh
    :language: bash
 
 .. figure:: /images/fitcircle_ex1.*

@@ -310,7 +310,7 @@ psxy
 
     下面的例子分别绘制了 ``+b`` 、 ``+c`` 、 ``+f`` 、 ``+s`` 、 ``+t`` 所对应的符号：
 
-    .. literalinclude:: ../scripts/psxy_-Sf.sh
+    .. literalinclude:: /scripts/psxy_-Sf.sh
        :language: bash
 
     .. figure:: /images/psxy_-Sf.*
@@ -363,7 +363,7 @@ psxy
     #. ``-SM`` 选项与 ``-Sm`` 完全相同，只是当圆弧的夹角恰好是90度是， ``-SM`` 会用直角符号来表示
     #. 圆弧的两端可加上额外的箭头，见 :ref:`doc:vectors` 一节
 
-    .. literalinclude:: ../scripts/psxy_-Sm.sh
+    .. literalinclude:: /scripts/psxy_-Sm.sh
        :language: bash
 
     .. figure:: /images/psxy_-Sm.*
@@ -457,7 +457,7 @@ psxy
 
     下面的示例分别用 ``-SW`` 和 ``-Sw`` 画了两个不同大小的楔形饼图：
 
-    .. literalinclude:: ../scripts/psxy_-Sw.sh
+    .. literalinclude:: /scripts/psxy_-Sw.sh
        :language: bash
 
     .. figure:: /images/psxy_-Sw.*
@@ -530,7 +530,7 @@ psxy
 
 下面的脚本展示了 ``-F`` 选项的用法：
 
-.. literalinclude:: ../scripts/psxy_-F.sh
+.. literalinclude:: /scripts/psxy_-F.sh
    :language: bash
 
 .. figure:: /images/psxy_-F.*
@@ -541,7 +541,7 @@ psxy
 
 ``-L`` 选项的示例：
 
-.. literalinclude:: ../scripts/psxy_-L.sh
+.. literalinclude:: /scripts/psxy_-L.sh
    :language: bash
 
 .. figure:: /images/psxy_-L.*

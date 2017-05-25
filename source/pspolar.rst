@@ -68,7 +68,7 @@ pspolar
 示例
 ----
 
-.. literalinclude:: ../scripts/pspolar_ex1.sh
+.. literalinclude:: /scripts/pspolar_ex1.sh
    :language: bash
 
 .. figure:: /images/pspolar_ex1.*

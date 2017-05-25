@@ -50,6 +50,7 @@ GMT |version| 模块列表
 
   - :doc:`pssolar` ：计算或/和绘制晨昏线以及民用、航海用以及天文用曙暮光区域
   - :doc:`psbasemap` ：绘制底图
+  - :doc:`psclip` ：打开或关闭多边形裁剪路径
 
 - 绘制 2D 数据
 
@@ -78,7 +79,6 @@ GMT |version| 模块列表
   - :doc:`gmtwhich` ：返回指定文件的完整路径
   - :doc:`fitcircle` ：拟合球面上数据点的平均位置及圆弧
   - :doc:`pssac` ：在地图上绘制 SAC 格式的地震波形数据
-  - :doc:`psclip` ：打开或关闭多边形裁剪路径
   - :doc:`pscoast` ：在地图上绘制海岸线、河流、国界线
   - :doc:`psxy` ：在图上绘制线段、多边形和符号
   - :doc:`pstext` ：在图上写文本

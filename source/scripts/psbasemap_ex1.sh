@@ -22,3 +22,4 @@ gmt psbasemap -R$Rg -J$Jg -D$R -F+p2p,blue -K -O >> $PS
 
 # 结束GMT绘图
 gmt psxy -R$R -J$J -T -O >> $PS
+rm gmt.*

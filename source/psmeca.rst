@@ -183,7 +183,7 @@ psmeca
 示例
 ----
 
-.. literalinclude:: ../scripts/psmeca_ex1.sh
+.. literalinclude:: /scripts/psmeca_ex1.sh
    :language: bash
 
 .. figure:: /images/psmeca_ex1.*
@@ -193,7 +193,7 @@ psmeca
 
    psmeca示例图1
 
-.. literalinclude:: ../scripts/psmeca_ex2.sh
+.. literalinclude:: /scripts/psmeca_ex2.sh
    :language: bash
 
 .. figure:: /images/psmeca_ex2.*
@@ -203,7 +203,7 @@ psmeca
 
    psmeca示例图2
 
-.. literalinclude:: ../scripts/psmeca_ex3.sh
+.. literalinclude:: /scripts/psmeca_ex3.sh
    :language: bash
 
 .. figure:: /images/psmeca_ex3.*

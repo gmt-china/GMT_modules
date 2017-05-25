@@ -1,7 +1,7 @@
 #
 # Makefile for all figures in GMT_Docs
 #
-OUT_DIR=../source/images
+OUT_DIR=../images
 PNG = $(patsubst %.sh, $(OUT_DIR)/%.png, $(wildcard *.sh))
 PDF = $(patsubst %.sh, $(OUT_DIR)/%.pdf, $(wildcard *.sh))
 

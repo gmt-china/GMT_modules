@@ -102,7 +102,7 @@ pscoupe
 
 下面的示例展示了 ``-Aa`` 选项的用法，指定P1和P2为剖面的起点和终点，并展示了不同倾角时的震源球的效果。
 
-.. literalinclude:: ../scripts/pscoupe_ex1.sh
+.. literalinclude:: /scripts/pscoupe_ex1.sh
    :language: bash
 
 .. figure:: /images/pscoupe_ex1.*
@@ -114,7 +114,7 @@ pscoupe
 
 下面的示例将震源球投影到不同方位角的剖面上的效果：
 
-.. literalinclude:: ../scripts/pscoupe_ex2.sh
+.. literalinclude:: /scripts/pscoupe_ex2.sh
    :language: bash
 
 .. figure:: /images/pscoupe_ex2.*

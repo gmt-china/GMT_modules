@@ -134,7 +134,7 @@ pslegend
 示例
 ----
 
-.. literalinclude:: ../scripts/pslegend_ex1.sh
+.. literalinclude:: /scripts/pslegend_ex1.sh
    :language: bash
 
 .. figure:: /images/pslegend_ex1.*
@@ -143,7 +143,7 @@ pslegend
 
    pslegend示例图1
 
-.. literalinclude:: ../scripts/pslegend_ex2.sh
+.. literalinclude:: /scripts/pslegend_ex2.sh
    :language: bash
 
 .. figure:: /images/pslegend_ex2.*

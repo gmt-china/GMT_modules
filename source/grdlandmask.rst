@@ -17,8 +17,7 @@ grdlandmask
 ``-I<xinc>[<unit>][=|+]/<yinc>[<unit>][=|+]``
     指定X和Y方向的网格间隔。见 :doc:`xyz2grd` 中的介绍。
 
-``-A``
-    不考虑面积过小的湖泊的边界，或不考虑某个级别的湖泊边界。见 :doc:`pscoast` 中的介绍。
+.. include:: explain_-A.rst_
 
 ``-D<resolution>[+]``
     选项海岸线数据的精度，见 :doc:`pscoast` 中的介绍。
