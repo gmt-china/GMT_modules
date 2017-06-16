@@ -62,6 +62,8 @@ GMT |version| 模块列表
 
 - 1D 数据处理
 
+  - :doc:`gmtselect` ：根据多个准则筛选数据
+
 - 2D 数据处理
 
   - :doc:`grdclip` ：对网格文件的Z值做裁剪
@@ -69,6 +71,7 @@ GMT |version| 模块列表
   - :doc:`grdedit` ：修改网格文件的头段或内容
   - :doc:`grdinfo` ：从网格文件中提取基本信息
   - :doc:`grdpaste` ：将两个网格沿着其共同边界拼接成一个文件
+  - :doc:`grdraster` ：从二进制数据中提取子区域并保存为GMT网格文件
 
 - 格式转换
 
@@ -93,7 +96,6 @@ GMT |version| 模块列表
   - :doc:`grdvector` ：根据两个网格文件绘制矢量场
   - :doc:`grdimage` ：在图上绘制网格数据
   - :doc:`psimage` ：将EPS或光栅图片放在图上
-  - :doc:`gmtselect` ：根据多个准则筛选数据
   - :doc:`filter1d` ：对1D表数据做时间域滤波
   - :doc:`gmtsimplify` ：使用Douglas-Peucker算法对线段做简化
   - :doc:`gmtconnect` ：将端点接近的线段连接起来
@@ -101,7 +103,6 @@ GMT |version| 模块列表
   - :doc:`project` ：将数据点投影到线或大圆路径上，生成测线，坐标转换
   - :doc:`grdconvert` ：在不同的网格格式之间互相转换
   - :doc:`grdblend` ：将多个部分重叠的网格文件合并成一个网格文件
-  - :doc:`grdraster` ：从二进制数据中提取子区域并保存为GMT网格文件
   - :doc:`grdlandmask` ：根据海岸线数据创建陆地-海洋的mask网格文件
   - :doc:`grdtrend` ：拟合网格的趋势面并计算残差
   - :doc:`grdsample` ：对网格文件做重采样

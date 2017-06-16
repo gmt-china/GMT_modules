@@ -6,7 +6,8 @@ grd2xyz
 :官方文档: :ref:`gmt:grd2xyz`
 :简介: 将网格文件转换成表数据
 
-该命令或读取一个或多个2D网格文件，并将XYZ数据以ASCII或二进制格式写到标准输出中。ASCII输出的格式由参数 ``FORMAT_FLOAT_OUT`` 控制。
+该命令或读取一个或多个2D网格文件，并将XYZ数据以ASCII或二进制格式写到标准输出中。
+ASCII输出的格式由参数 ``FORMAT_FLOAT_OUT`` 控制。
 
 必须选项
 --------
