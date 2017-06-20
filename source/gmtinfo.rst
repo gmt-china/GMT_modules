@@ -74,18 +74,30 @@ gmtinfo
         $ gmt info input.dat -C -I2
         0   2   0   4   0   3.2
 
-    上面的例子中， ``-I`` 选项后只接了一个增量，此时第二列数据也会使用同样的增量（出于向后兼容性考虑）。若只想要为第一列指定增量，第二列不指定，可以使用 ``-Ip`` 选项::
+    上面的例子中， ``-I`` 选项后只接了一个增量，此时第二列数据也会使用同样的
+    增量（出于向后兼容性考虑）。若只想要为第一列指定增量，第二列不指定，可以使用
+    ``-Ip`` 选项::
 
         $ gmt info input.dat -C -Ip2
         0   2   1   3   0   3.2
 
-    对于某些算法，比如FFT或者surface命令， ``-R`` 选项的不同取值会影响到运算的速度， ``-If`` 会输出优化后的 ``-R`` 以得到最快FFT结果， ``-Is`` 会输出优化后的 ``-R`` 以得到最快的surface结果。
+    对于某些算法，比如FFT或者surface命令， ``-R`` 选项的不同取值会影响到运算的
+    速度， ``-If`` 会输出优化后的 ``-R`` 以得到最快FFT结果， ``-Is`` 会输出优化
+    后的 ``-R`` 以得到最快的surface结果。
 
 ``-L``
-    确定多个表数据（ ``-Af`` ）或多段数据（ ``-As`` ）的共同范围。若与 ``-I`` 选项连用，则最终的结果会向内近似以使得极值位于真实数据范围内。
+    确定多个表数据（ ``-Af`` ）或多段数据（ ``-As`` ）的共同范围。若与 ``-I``
+    选项连用，则最终的结果会向内近似以使得极值位于真实数据范围内。
 
-``-S``
-    见官方文档。
+``-S[xy]``
+    Add extra space for error bars. Useful together with **-I** option
+    and when later plotting with :doc:`psxy` **-E**. **-Sx** leaves space
+    for horizontal error bars using the values in third
+    (2) column. **-Sy** leaves space for vertical error
+    bars using the values in third (2) column. **-S**
+    or **-Sxy** leaves space for both error bars using the values in
+    third and fourth (2 and 3) columns.
 
-``-T<dz>[/<col>]``
-    以 ``-Tzmin/zmax/dz`` 的形式报告第 ``<col>`` 列的最值，默认报告第1列。该选项必须 ``-I`` 选项连用。
+``-T<dz>[+c<col>]``
+    以 ``-Tzmin/zmax/dz`` 的形式报告第 ``<col>`` 列的最值， ``<col>`` 的默认值为0。
+    该选项必须 ``-I`` 选项连用。

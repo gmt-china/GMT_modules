@@ -46,6 +46,15 @@ GMT |version| 模块列表
   - :doc:`gmtget` ：列出单个或多个GMT参数的当前值
   - :doc:`gmtdefaults` ：列出所有GMT参数的当前值
 
+- 信息提取
+
+  - :doc:`grdinfo` ：从网格文件中提取基本信息
+  - :doc:`gmtinfo` ：从表数据中提取信息
+  - :doc:`minmax <gmtinfo>`: 已改名为 ``gmtinfo``
+  - :doc:`gmtwhich` ：返回指定文件的完整路径
+
+- 格式转换
+
 - 绘制 1D 数据
 
   - :doc:`pssolar` ：计算或/和绘制晨昏线以及民用、航海用以及天文用曙暮光区域
@@ -55,10 +64,6 @@ GMT |version| 模块列表
 - 绘制 2D 数据
 
   - :doc:`gmtlogo` ：在图上绘制GMT图形logo
-
-- 信息提取
-
-  - :doc:`grdinfo` ：从网格文件中提取基本信息
 
 - 1D 数据处理
 
@@ -72,14 +77,11 @@ GMT |version| 模块列表
   - :doc:`grdinfo` ：从网格文件中提取基本信息
   - :doc:`grdpaste` ：将两个网格沿着其共同边界拼接成一个文件
   - :doc:`grdraster` ：从二进制数据中提取子区域并保存为GMT网格文件
-
-- 格式转换
+  - :doc:`grdsample` ：对网格文件做重采样
+  - :doc:`grdvolume` ：计算网格数据中某个等值线所包围的表面积和体积
 
 **以下模块需要重新检查**
 
-  - :doc:`gmtinfo` ：从表数据中提取信息
-  - :doc:`minmax <gmtinfo>`: 已改名为 ``gmtinfo``
-  - :doc:`gmtwhich` ：返回指定文件的完整路径
   - :doc:`fitcircle` ：拟合球面上数据点的平均位置及圆弧
   - :doc:`pssac` ：在地图上绘制 SAC 格式的地震波形数据
   - :doc:`pscoast` ：在地图上绘制海岸线、河流、国界线
@@ -105,13 +107,10 @@ GMT |version| 模块列表
   - :doc:`grdblend` ：将多个部分重叠的网格文件合并成一个网格文件
   - :doc:`grdlandmask` ：根据海岸线数据创建陆地-海洋的mask网格文件
   - :doc:`grdtrend` ：拟合网格的趋势面并计算残差
-  - :doc:`grdsample` ：对网格文件做重采样
-  - :doc:`grdvolume` ：计算网格数据中某个等值线所包围的表面积和体积
   - :doc:`grdproject` ：对网格数据做地图变换和逆变换
   - :doc:`grdmask` ：根据多边形数据或点数据创建mask网格文件
   - :doc:`kml2gmt` ：将Google Earth的KML文件转换为GMT表数据
   - :doc:`grd2xyz` ：将网格文件转换成表数据
-  - :doc:`grdconvert` ：在不同的网格格式之间互相转换
   - :doc:`psconvert` ：将GMT生成的PS文件转换为其他图片格式
   - :doc:`ps2raster <psconvert>` ：将GMT生成的PS文件转换为其他图片格式
   - :doc:`xyz2grd` ：将XYZ数据或Z数据转换成网格文件
