@@ -55,6 +55,10 @@ GMT |version| 模块列表
 
 - 格式转换
 
+  - :doc:`psconvert` ：将GMT生成的PS文件转换为其他图片格式
+  - :doc:`ps2raster <psconvert>` ：将GMT生成的PS文件转换为其他图片格式
+  - :doc:`grdconvert` ：在不同的网格格式之间互相转换
+
 - 绘制 1D 数据
 
   - :doc:`pssolar` ：计算或/和绘制晨昏线以及民用、航海用以及天文用曙暮光区域
@@ -64,6 +68,7 @@ GMT |version| 模块列表
 - 绘制 2D 数据
 
   - :doc:`gmtlogo` ：在图上绘制GMT图形logo
+  - :doc:`psimage` ：将EPS或光栅图片放在图上
 
 - 1D 数据处理
 
@@ -72,6 +77,7 @@ GMT |version| 模块列表
 - 2D 数据处理
 
   - :doc:`grdclip` ：对网格文件的Z值做裁剪
+  - :doc:`grdconvert` ：在不同的网格格式之间互相转换
   - :doc:`grdcut` ：从一个网格文件中裁剪出一个矩形子区域生成新的网格文件
   - :doc:`grdedit` ：修改网格文件的头段或内容
   - :doc:`grdinfo` ：从网格文件中提取基本信息
@@ -97,13 +103,11 @@ GMT |version| 模块列表
   - :doc:`pscoupe` ：绘制震源机制解的剖面图
   - :doc:`grdvector` ：根据两个网格文件绘制矢量场
   - :doc:`grdimage` ：在图上绘制网格数据
-  - :doc:`psimage` ：将EPS或光栅图片放在图上
   - :doc:`filter1d` ：对1D表数据做时间域滤波
   - :doc:`gmtsimplify` ：使用Douglas-Peucker算法对线段做简化
   - :doc:`gmtconnect` ：将端点接近的线段连接起来
   - :doc:`sample1d` ：对1D表数据进行重采样
   - :doc:`project` ：将数据点投影到线或大圆路径上，生成测线，坐标转换
-  - :doc:`grdconvert` ：在不同的网格格式之间互相转换
   - :doc:`grdblend` ：将多个部分重叠的网格文件合并成一个网格文件
   - :doc:`grdlandmask` ：根据海岸线数据创建陆地-海洋的mask网格文件
   - :doc:`grdtrend` ：拟合网格的趋势面并计算残差
@@ -111,8 +115,6 @@ GMT |version| 模块列表
   - :doc:`grdmask` ：根据多边形数据或点数据创建mask网格文件
   - :doc:`kml2gmt` ：将Google Earth的KML文件转换为GMT表数据
   - :doc:`grd2xyz` ：将网格文件转换成表数据
-  - :doc:`psconvert` ：将GMT生成的PS文件转换为其他图片格式
-  - :doc:`ps2raster <psconvert>` ：将GMT生成的PS文件转换为其他图片格式
   - :doc:`xyz2grd` ：将XYZ数据或Z数据转换成网格文件
   - :doc:`grd2rgb` ：将网格文件、原始RGB文件、SUN光栅文件转换成R/G/B三个网格文件
 

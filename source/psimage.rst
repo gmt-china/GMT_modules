@@ -8,10 +8,11 @@ psimage
 
 该命令可以读取一个 EPS 文件或光栅图片格式，并将其画在地图上。
 
-该命令的主要用途有两个：
+该命令可以用于：
 
 #. 将多张图合并到一张图上
 #. 将自己单位的 logo 放在 GMT 生成的图上
+#. 将一般图片放在图上
 
 必须选项
 --------
@@ -32,7 +33,7 @@ psimage
 可选选项
 --------
 
-``-D[g|j|J|n|x]<refpoint>+r<dpi>+r<dpi>+w[-]<width>[/<height>][+j<justify>][+n<nx>[/<ny>]][+o<dx>[/<dy>]]``
+``-D[g|j|J|n|x]<refpoint>+r<dpi>+w[-]<width>[/<height>][+j<justify>][+n<nx>[/<ny>]][+o<dx>[/<dy>]]``
     指定图片的尺寸和位置
 
     #. ``[g|j|J|n|x]<refpoint>`` 指定底图上的参考点，见 :ref:`doc:embellishments` 一节
