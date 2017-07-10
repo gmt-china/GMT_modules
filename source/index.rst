@@ -58,24 +58,33 @@ GMT |version| 模块列表
   - :doc:`psconvert` ：将GMT生成的PS文件转换为其他图片格式
   - :doc:`ps2raster <psconvert>` ：将GMT生成的PS文件转换为其他图片格式
   - :doc:`grdconvert` ：在不同的网格格式之间互相转换
+  - :doc:`xyz2grd` ：将XYZ数据或Z数据转换成网格文件
+  - :doc:`grd2xyz` ：将网格文件转换成表数据
+  - :doc:`kml2gmt` ：将Google Earth的KML文件转换为GMT表数据
 
 - 绘制 1D 数据
 
   - :doc:`pssolar` ：计算或/和绘制晨昏线以及民用、航海用以及天文用曙暮光区域
   - :doc:`psbasemap` ：绘制底图
   - :doc:`psclip` ：打开或关闭多边形裁剪路径
+  - :doc:`pshistogram` ：统计并绘制直方图
   - :doc:`pstext` ：在图上写文本
   - :doc:`pscoast` ：在地图上绘制海岸线、河流、国界线
   - :doc:`pslegend` ：绘制图例
+  - :doc:`psrose` ：绘制极坐标下的直方图（sector图、rose图或windrose图）
+  - :doc:`psxy` ：在图上绘制线段、多边形和符号
 
 - 绘制 2D 数据
 
   - :doc:`gmtlogo` ：在图上绘制GMT图形logo
   - :doc:`psimage` ：将EPS或光栅图片放在图上
+  - :doc:`psscale` ：在图上绘制灰色或彩色色标
 
 - 1D 数据处理
 
   - :doc:`gmtselect` ：根据多个准则筛选数据
+  - :doc:`fitcircle` ：拟合球面上数据点的平均位置及圆弧
+  - :doc:`gmtsimplify` ：使用Douglas-Peucker算法对线段做简化
 
 - 2D 数据处理
 
@@ -83,20 +92,18 @@ GMT |version| 模块列表
   - :doc:`grdconvert` ：在不同的网格格式之间互相转换
   - :doc:`grdcut` ：从一个网格文件中裁剪出一个矩形子区域生成新的网格文件
   - :doc:`grdedit` ：修改网格文件的头段或内容
+  - :doc:`grdlandmask` ：根据海岸线数据创建陆地-海洋的mask网格文件
   - :doc:`grdinfo` ：从网格文件中提取基本信息
   - :doc:`grdpaste` ：将两个网格沿着其共同边界拼接成一个文件
   - :doc:`grdraster` ：从二进制数据中提取子区域并保存为GMT网格文件
   - :doc:`grdsample` ：对网格文件做重采样
   - :doc:`grdvolume` ：计算网格数据中某个等值线所包围的表面积和体积
+  - :doc:`grd2xyz` ：将网格文件转换成表数据
+  - :doc:`grd2rgb` ：将网格文件、原始RGB文件、SUN光栅文件转换成R/G/B三个网格文件
 
 **以下模块需要重新检查**
 
-  - :doc:`fitcircle` ：拟合球面上数据点的平均位置及圆弧
   - :doc:`pssac` ：在地图上绘制 SAC 格式的地震波形数据
-  - :doc:`psxy` ：在图上绘制线段、多边形和符号
-  - :doc:`psscale` ：在图上绘制灰色或彩色色标
-  - :doc:`pshistogram` ：统计并绘制直方图
-  - :doc:`psrose` ：绘制极坐标下的直方图（sector图、rose图或windrose图）
   - :doc:`psmeca` ：在地图上绘制震源机制解
   - :doc:`pspolar` ：在震源球上绘制台站极性
   - :doc:`psvelo` ：在地图上绘制速度矢量、十字线、楔形图
@@ -104,19 +111,13 @@ GMT |version| 模块列表
   - :doc:`grdvector` ：根据两个网格文件绘制矢量场
   - :doc:`grdimage` ：在图上绘制网格数据
   - :doc:`filter1d` ：对1D表数据做时间域滤波
-  - :doc:`gmtsimplify` ：使用Douglas-Peucker算法对线段做简化
   - :doc:`gmtconnect` ：将端点接近的线段连接起来
   - :doc:`sample1d` ：对1D表数据进行重采样
   - :doc:`project` ：将数据点投影到线或大圆路径上，生成测线，坐标转换
   - :doc:`grdblend` ：将多个部分重叠的网格文件合并成一个网格文件
-  - :doc:`grdlandmask` ：根据海岸线数据创建陆地-海洋的mask网格文件
   - :doc:`grdtrend` ：拟合网格的趋势面并计算残差
   - :doc:`grdproject` ：对网格数据做地图变换和逆变换
   - :doc:`grdmask` ：根据多边形数据或点数据创建mask网格文件
-  - :doc:`kml2gmt` ：将Google Earth的KML文件转换为GMT表数据
-  - :doc:`grd2xyz` ：将网格文件转换成表数据
-  - :doc:`xyz2grd` ：将XYZ数据或Z数据转换成网格文件
-  - :doc:`grd2rgb` ：将网格文件、原始RGB文件、SUN光栅文件转换成R/G/B三个网格文件
 
 - 计划整理的命令
 

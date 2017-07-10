@@ -6,7 +6,7 @@ grd2xyz
 :官方文档: :ref:`gmt:grd2xyz`
 :简介: 将网格文件转换成表数据
 
-该命令或读取一个或多个2D网格文件，并将XYZ数据以ASCII或二进制格式写到标准输出中。
+该命令读取一个或多个2D网格文件，并将XYZ数据以ASCII或二进制格式写到标准输出中。
 ASCII输出的格式由参数 ``FORMAT_FLOAT_OUT`` 控制。
 
 必须选项
@@ -21,7 +21,8 @@ ASCII输出的格式由参数 ``FORMAT_FLOAT_OUT`` 控制。
 ``-C[f|i]``
     输出的XY坐标值用对应的列、行号替代
 
-    默认输出的三列数据是：X坐标、Y坐标和Z值。使用该选项，则输出的三列数据为：列号、行号和Z值。其中，行号和列号从0开始算起。
+    默认输出的三列数据是：X坐标、Y坐标和Z值。使用该选项，则输出的三列数据为：
+    列号、行号和Z值。其中，行号和列号从0开始算起。
 
     - 使用 ``-Cf`` 则行号和列号从1开始算起
     - ``-Ci`` 会输出两列数据：索引和Z值。索引相当于是将二维数组用一维数组表示
@@ -29,13 +30,16 @@ ASCII输出的格式由参数 ``FORMAT_FLOAT_OUT`` 控制。
 ``-R<west>/<east>/<south>/<north>``
     指定要转换的网格文件的数据范围
 
-``-W[<weight>]``
+``-W[a|<weight>]``
     默认输出XYZ三列数据，使用该选项则输出四列XYZW，其中W即 ``<weight>``
+
+    若使用 ``-Wa`` 则权重为每个节点所占据的面积。
 
 ``-Z[flags]``
     以 ASCII 或二进制形式输出表数据
 
-    使用该选项，则输出时只有Z值，没有XY信息。输出Z值的顺序由 ``<flags>`` 决定。若是行优先， ``<flags>`` 的第一个字符可以取：
+    使用该选项，则输出时只有Z值，没有XY信息。输出Z值的顺序由 ``<flags>``
+    决定。若是行优先， ``<flags>`` 的第一个字符可以取：
 
     - ``T`` 表示第一行是y=ymax
     - ``B`` 表示第一行是y=ynin
@@ -67,3 +71,14 @@ ASCII输出的格式由参数 ``FORMAT_FLOAT_OUT`` 控制。
     - ``d`` 8-byte floating point double precision
 
     默认值为 ``-ZTLa`` 。
+
+示例
+----
+
+::
+
+    gmt grd2xyz hawaii_grv.nc > hawaii_grv.xyz
+
+::
+
+    gmt grd2xyz raw_data.nc -ZTLf > hawaii_grv.b
