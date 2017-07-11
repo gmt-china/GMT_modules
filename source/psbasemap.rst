@@ -71,7 +71,7 @@ psbasemap
 
         gmt psbasemap -R0/10/0/10 -JX10c/5c -Aoutline.txt
 
-``-D[<unit>]<xmin>/<xmax>/<ymin>/<ymax>[r][+s<file>]``
+``-D[<unit>]<xmin>/<xmax>/<ymin>/<ymax>[r][+s<file>][+t]``
 
 ``-D[g|j|J|n|x]<refpoint>+w<width>[/<height>][+j<justify>][+o<dx>[/<dy>]][+s<file>][+t]``
     在底图中绘制图中图（insert map box），需要 ``-F`` 选项，该选项有两种语法。

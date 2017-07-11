@@ -49,9 +49,13 @@ grdimage
 ``-I[<intensfile>|<intensity>|<modifiers>]``
     增加光照效果
 
-    可以给一个常数值，也可以给一个Z值范围在-1到1的网格文件。通常该强度文件用
-    ``grdgradient`` 生成，若不指定该强度文件，则GMT会自动调用 ``grdgradient``
-    并使用参数 ``-A-45 -Nt1`` 根据输入网格数据生成强度文件。
+    可以通过三种方式设置光照效果:
+
+    #. 给定一个Z值范围为(-1,1)的网格文件，该文件可以用 ``grdgradient`` 生成
+    #. 给定一个常数作为光照强度
+    #. 不指定光照强度文件，只使用 ``-I+`` 则会自动调用 ``grdgradient``
+       并使用参数 ``-A-45 -Nt1`` 计算输入网格数据的梯度作为光照强度文件。用户
+       可以使用 ``+a<azimuth>+n<args>`` 以自定义 grdgradient 的 -A 和 -N 选项
 
 ``-M``
     使用YIQ转换强制将其转换为灰度图。
@@ -61,3 +65,10 @@ grdimage
 
 ``-Q``
     将值为NaN的节点处设置为透明色
+
+示例
+----
+
+使用默认的光照效果::
+
+    gmt grdimage stuff.nc -JX6i+ -I+ > quick.ps
