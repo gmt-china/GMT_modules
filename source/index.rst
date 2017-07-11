@@ -96,6 +96,7 @@ GMT |version| 模块列表
   - :doc:`gmtconnect` ：将端点接近的线段连接起来
   - :doc:`project` ：将数据点投影到线或大圆路径上，生成测线，坐标转换
   - :doc:`sample1d` ：对1D表数据进行重采样
+  - :doc:`spectrum1d`: 计算一个时间序列的自功率谱，或两个时间序列的互功率谱
 
 - 2D 数据处理
 
@@ -116,9 +117,9 @@ GMT |version| 模块列表
   - :doc:`grdproject` ：对网格数据做地图变换和逆变换
   - :doc:`grdmask` ：根据多边形数据或点数据创建mask网格文件
 
+- 尚未整理的命令
 
-- 计划整理的命令
-
+  #. :doc:`psternary`
   #. :doc:`grdtrack`
   #. :doc:`makecpt`
   #. :doc:`grd2cpt`
@@ -137,9 +138,6 @@ GMT |version| 模块列表
   #. :doc:`grdfft`
   #. :doc:`splitxyz`
   #. :doc:`gmtmath`
-
-- 没有整理计划的命令
-
   #. :doc:`blockmean`
   #. :doc:`blockmedian`
   #. :doc:`blockmode`
@@ -158,6 +156,7 @@ GMT |version| 模块列表
   #. :doc:`triangulate`
   #. :doc:`nearneighbor`
   #. :doc:`mgd77convert`
+  #. :doc:`mgd77header`
   #. :doc:`mgd77info`
   #. :doc:`mgd77list`
   #. :doc:`mgd77magref`
@@ -191,8 +190,8 @@ GMT |version| 模块列表
   #. :doc:`img2grd`
   #. :doc:`originator`
   #. :doc:`rotconverter`
+  #. :doc:`rotsmoother`
   #. :doc:`segy2grd`
-  #. :doc:`spectrum1d`
   #. :doc:`sph2grd`
   #. :doc:`sphdistance`
   #. :doc:`sphinterpolate`
@@ -284,6 +283,7 @@ GMT |version| 模块列表
    makecpt
    mapproject
    mgd77convert
+   mgd77header
    mgd77info
    mgd77list
    mgd77magref
@@ -312,12 +312,14 @@ GMT |version| 模块列表
    pssegy
    pssegyz
    pssolar
+   psternary
    pstext
    psvelo
    pswiggle
    psxy
    psxyz
    rotconverter
+   rotsmoother
    sample1d
    segy2grd
    spectrum1d
