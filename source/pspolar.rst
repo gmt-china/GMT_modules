@@ -6,7 +6,8 @@ pspolar
 :官方文档: :ref:`gmt:pspolar`
 :简介: 将台站的极性信息画在震源球上
 
-一般情况下，需要使用psmeca绘制震源球，再使用pspolar将每个台站的极性信息画在相应的震源球上。因而，通常psmeca和pspolar需要连在一起使用。
+一般情况下，需要使用psmeca绘制震源球，再使用pspolar将每个台站的极性信息画在
+相应的震源球上。因而，通常psmeca和pspolar需要连在一起使用。
 
 选项
 ----

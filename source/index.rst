@@ -73,18 +73,29 @@ GMT |version| 模块列表
   - :doc:`pslegend` ：绘制图例
   - :doc:`psrose` ：绘制极坐标下的直方图（sector图、rose图或windrose图）
   - :doc:`psxy` ：在图上绘制线段、多边形和符号
+  - :doc:`pssac` ：在地图上绘制 SAC 格式的地震波形数据
+  - :doc:`psmeca` ：在地图上绘制震源机制解
+  - :doc:`pspolar` ：在震源球上绘制台站极性
+  - :doc:`psvelo` ：在地图上绘制速度矢量、十字线、楔形图
+  - :doc:`pscoupe` ：绘制震源机制解的剖面图
 
 - 绘制 2D 数据
 
   - :doc:`gmtlogo` ：在图上绘制GMT图形logo
   - :doc:`psimage` ：将EPS或光栅图片放在图上
   - :doc:`psscale` ：在图上绘制灰色或彩色色标
+  - :doc:`grdvector` ：根据两个网格文件绘制矢量场
+  - :doc:`grdimage` ：在图上绘制网格数据
 
 - 1D 数据处理
 
   - :doc:`gmtselect` ：根据多个准则筛选数据
   - :doc:`fitcircle` ：拟合球面上数据点的平均位置及圆弧
   - :doc:`gmtsimplify` ：使用Douglas-Peucker算法对线段做简化
+  - :doc:`filter1d` ：对1D表数据做时间域滤波
+  - :doc:`gmtconnect` ：将端点接近的线段连接起来
+  - :doc:`project` ：将数据点投影到线或大圆路径上，生成测线，坐标转换
+  - :doc:`sample1d` ：对1D表数据进行重采样
 
 - 2D 数据处理
 
@@ -100,24 +111,11 @@ GMT |version| 模块列表
   - :doc:`grdvolume` ：计算网格数据中某个等值线所包围的表面积和体积
   - :doc:`grd2xyz` ：将网格文件转换成表数据
   - :doc:`grd2rgb` ：将网格文件、原始RGB文件、SUN光栅文件转换成R/G/B三个网格文件
-
-**以下模块需要重新检查**
-
-  - :doc:`pssac` ：在地图上绘制 SAC 格式的地震波形数据
-  - :doc:`psmeca` ：在地图上绘制震源机制解
-  - :doc:`pspolar` ：在震源球上绘制台站极性
-  - :doc:`psvelo` ：在地图上绘制速度矢量、十字线、楔形图
-  - :doc:`pscoupe` ：绘制震源机制解的剖面图
-  - :doc:`grdvector` ：根据两个网格文件绘制矢量场
-  - :doc:`grdimage` ：在图上绘制网格数据
-  - :doc:`filter1d` ：对1D表数据做时间域滤波
-  - :doc:`gmtconnect` ：将端点接近的线段连接起来
-  - :doc:`sample1d` ：对1D表数据进行重采样
-  - :doc:`project` ：将数据点投影到线或大圆路径上，生成测线，坐标转换
   - :doc:`grdblend` ：将多个部分重叠的网格文件合并成一个网格文件
   - :doc:`grdtrend` ：拟合网格的趋势面并计算残差
   - :doc:`grdproject` ：对网格数据做地图变换和逆变换
   - :doc:`grdmask` ：根据多边形数据或点数据创建mask网格文件
+
 
 - 计划整理的命令
 
