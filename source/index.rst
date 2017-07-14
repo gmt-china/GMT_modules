@@ -1,5 +1,5 @@
-GMT |version| 模块列表
-######################
+GMT 模块列表
+############
 
 欢迎来到 `GMT <http://gmt.soest.hawaii.edu/projects/gmt>`_ （Generic Mapping Tools）的世界。
 
