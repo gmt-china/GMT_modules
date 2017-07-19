@@ -14,18 +14,28 @@ inventory_header = '''\
 # The remainder of this file is compressed with zlib.
 '''.encode('utf-8')
 
-docs = ['configurations', 'embellishments', 'grid-data',
-        'vectors',
-        'cpt', 'text', 'character-escape', 'special-fonts', 'special-characters',
-        'anchors', 'pen', 'lines', 'fill', 'unit',
-
-        'option-binary',
-        'option-n',
-       ]
+docs = {
+    'configurations': 'configurations',
+    'embellishments': 'basic/embellishments',
+    'grid-data': 'io/grid-data',
+    'vectors': 'basic/vectors',
+    'cpt': 'io/cpt',
+    'text': 'basic/text',
+    'character-escape': 'basic/character-escape',
+    'special-fonts': 'basic/special-fonts',
+    'special-characters': 'basic/special-characters',
+    'anchors': 'basic/anchors',
+    'pen': 'basic/pen',
+    'lines': 'basic/lines',
+    'fill': 'basic/fill',
+    'unit': 'basic/unit',
+    'option-binary': 'option/binary',
+    'option-n': 'option/n'
+}
 
 payload_list = []
-for item in docs:
-    payload_list.append('{0} std:label -1 {0}.html {0}\n'.format(item))
+for key, value in docs.items():
+    payload_list.append('{0} std:label -1 {1}.html {0}\n'.format(key, value))
 
 inventory_payload = ''.join(payload_list).encode('utf-8')
 
