@@ -6,6 +6,9 @@ gmt
 :官方文档: :ref:`gmt:gmt`
 :说明: GMT的主程序，也是GMT5中唯一的一个二进制文件，GMT的所有模块都需要通过该命令调用
 
+调用模块
+--------
+
 GMT的所有功能通过如下语法调用::
 
     gmt <module> <module-options>
@@ -16,7 +19,15 @@ GMT的所有功能通过如下语法调用::
 
     gmt psbasemap -JX10c/10c -R0/20/0/5 -Bafg > test.ps
 
-gmt还提供了一个特殊的模块，名为 ``clear`` ::
+会话管理
+--------
+
+GMT 6开始提供了现代模式，以简化代码。
+
+clear
++++++
+
+::
 
     gmt clear history|conf|cache|all
 
@@ -25,7 +36,10 @@ gmt还提供了一个特殊的模块，名为 ``clear`` ::
 - `gmt clear cache`: 删除用户目录（ ``~/.gmt`` ）下的缓存文件夹
 - `gmt clear all`: 清理 history、conf 和 cache
 
-除此之外，还有一些其他选项可以使用：
+其他选项
+--------
+
+``gmt`` 还可以跟一些其他选项：
 
 - ``gmt --help`` ：列出GMT提供的所有模块名及其功能
 - ``gmt --version`` ：显示GMT版本

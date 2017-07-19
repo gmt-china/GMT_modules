@@ -37,8 +37,8 @@ gmtset
 --------
 
 ``-C``
-    将当前目录下的GMT4配置文件 ``.gmtdefaults4`` 转换为GMT5所使用的 ``gmt.conf``
-    文件，并保留原GMT4配置文件。
+    将当前目录下的GMT4参数配置文件 ``.gmtdefaults4`` 转换为GMT新版本所使用的
+    ``gmt.conf`` 文件，并保留原GMT4配置文件。
 
 ``-D[s|u]``
     基于系统配置文件修改参数值。
