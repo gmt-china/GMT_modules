@@ -17,9 +17,9 @@ gmtdefaults
 ``-D[u|s]``
     打印系统默认参数值。若不使用该选项，则打印参数当前值。
 
-    #. ``-D`` ：列出GMT系统默认参数值，即 ``${GMTHOME}/share/conf/gmt.conf``
-    #. ``-Du`` ：列出GMT的US单位制下的默认参数值，即 ``${GMTHOME}/share/conf/gmt_US.conf``
-    #. ``-Ds`` ：列出GMT的SI单位制下的默认参数值，即 ``${GMTHOME}/share/conf/gmt_SI.conf``
+    #. ``-D`` ：列出GMT系统默认参数值
+    #. ``-Du`` ：列出GMT的US单位制下的默认参数值
+    #. ``-Ds`` ：列出GMT的SI单位制下的默认参数值
 
 示例
 ----

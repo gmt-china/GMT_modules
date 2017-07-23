@@ -28,7 +28,7 @@ gmtget
 
     默认情况下，该模块会按照如下优先级寻找配置文件 ``gmt.conf`` ::
 
-        ./gmt.conf  > ~/gmt.conf > ~/.gmt/gmt.conf > ${GMTHOME}/share/conf/gmt.conf
+        ./gmt.conf  > ~/gmt.conf > ~/.gmt/gmt.conf > 系统默认参数
 
 ``-L``
     输出时一行只输出一个返回值。
