@@ -20,9 +20,9 @@ install:
 
 script:
   - make linkcheck
-  - make html
-  - make latexpdf
-  - make pre-deploy
+  # build html and PDF
+  - make build
+
 
 deploy:
   provider: pages
