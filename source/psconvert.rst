@@ -178,7 +178,7 @@ PDF、PNG、PPM、SVG、TIFF 格式。
 
     转换为JPG格式的灰度图::
 
-        gmt psconvert -Tj- test.ps
+        gmt psconvert -Tj test.ps
 
     利用一堆PS文件生成一个多页PDF::
 
