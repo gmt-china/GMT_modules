@@ -12,7 +12,7 @@ psscale
 ``-D[g|j|J|n|x]<refpoint>[+w<length>[/<width>]][+e[b|f][<length>]][+h|v][+j<justify>][+m[a|c|l|u]][+n[<txt>]][+o<dx>[/<dy>]]``
     指定色标的尺寸和位置。
 
-    #. ``[g|j|J|n|x]<refpoint>`` 指定底图上的参考量，见 :ref:`doc:embellishments` 一节
+    #. ``[g|j|J|n|x]<refpoint>`` 指定底图上的参考点，见 :ref:`doc:embellishments` 一节
     #. ``+j<justify>`` 指定色标上的锚点，默认锚点是 ``BL`` ，见 :ref:`doc:embellishments` 一节
     #. ``+o<dx>[/<dy>]`` 指定参考点的额外偏移量，见 :ref:`doc:embellishments`
     #. ``+w<length>[/<width>]`` 指定色标的长度和宽度。若未指定宽度，则默认为长度
