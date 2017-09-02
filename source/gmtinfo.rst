@@ -90,14 +90,13 @@ gmtinfo
     选项连用，则最终的结果会向内近似以使得极值位于真实数据范围内。
 
 ``-S[xy]``
-    Add extra space for error bars. Useful together with **-I** option
-    and when later plotting with :doc:`psxy` **-E**. **-Sx** leaves space
-    for horizontal error bars using the values in third
-    (2) column. **-Sy** leaves space for vertical error
-    bars using the values in third (2) column. **-S**
-    or **-Sxy** leaves space for both error bars using the values in
-    third and fourth (2 and 3) columns.
+    为绘制误差棒增加额外的列，与 ``-I`` 选项一起使用生成数据并直接用于
+    接下来 ``psxy -E`` 绘制误差棒。
+
+    - ``-Sx`` 将数据的第三列(2)作为水平误差棒的数据
+    - ``-Sy`` 将数据的第四列(3)作为垂直误差棒的数据
+    - ``-Sxy`` 将数据的第三(2)和第四(3)列作为水平和垂直误差棒的数据
 
 ``-T<dz>[+c<col>]``
     以 ``-Tzmin/zmax/dz`` 的形式报告第 ``<col>`` 列的最值， ``<col>`` 的默认值为0。
-    该选项必须 ``-I`` 选项连用。
+    该选项不能与 ``-I`` 选项连用。
