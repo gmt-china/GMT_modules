@@ -117,7 +117,7 @@ PDF、PNG、PPM、SVG、TIFF 格式。
 
     #. Linux下一般不需要设置ghostscript的路径，除非你自己重新编译了gs并安装到了非标准路径下
     #. Windows下，一般也不需要使用该选项，程序会自动从注册表里获取路径信息
-    #. 如果从注册表中获取路径失败，则必须指定-G选项，例如 ``-Gc:\programs\gs\gs9.02\bin\gswin64c``
+    #. 如果从注册表中获取路径失败，则必须指定 ``-G`` 选项，例如 ``-Gc:\programs\gs\gs9.02\bin\gswin64c``
 
 ``-I``
     Enforce gray-shades by using ICC profiles.  GhostScript versions
