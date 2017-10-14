@@ -22,7 +22,7 @@ psimage
 
     - EPS文件必须包含合适的BoundingBox
     - 光栅文件的颜色深度可以是1、8、24、32位
-    - 光栅文件是通过GDAL读入的，若安装GMT时未配置GDAL，则该命令只能读取Sun光栅文件
+    - 光栅文件是通过GDAL读入的，若安装GMT时未配置GDAL，则该命令只支持EPS文件
 
     .. note::
 
