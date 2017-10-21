@@ -111,7 +111,6 @@ GMT 模块列表
   - :doc:`grdsample` ：对网格文件做重采样
   - :doc:`grdvolume` ：计算网格数据中某个等值线所包围的表面积和体积
   - :doc:`grd2xyz` ：将网格文件转换成表数据
-  - :doc:`grd2rgb` ：将网格文件、原始RGB文件、SUN光栅文件转换成R/G/B三个网格文件
   - :doc:`grdblend` ：将多个部分重叠的网格文件合并成一个网格文件
   - :doc:`grdtrend` ：拟合网格的趋势面并计算残差
   - :doc:`grdproject` ：对网格数据做地图变换和逆变换
@@ -239,7 +238,6 @@ GMT 模块列表
    gpsgridder
    gravfft
    grd2cpt
-   grd2rgb
    grd2xyz
    grdblend
    grdclip
