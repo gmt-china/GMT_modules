@@ -11,6 +11,7 @@ grdcut
 - ``-R`` 选项： 直接指定子区域的范围
 - ``-Z`` 选项： 通过检查网格节点的值间接限定子区域的范围
 - ``-S`` 选项： 通过指定与特定点的距离间接限定子区域的范围
+- ``-J`` 选项： 对于倾斜投影而言，该选项会自动确定一个可以完全包含倾斜区域的矩形范围
 
 必选选项
 --------
@@ -23,6 +24,10 @@ grdcut
 
 可选选项
 --------
+
+``-D[weight]``
+    不写入网格问及，而是直接将 *x y z* 写到标准输出。若加上 ``weight`` ，则输出
+    *x y z weight* 。
 
 ``-N[<nodata>]``
     允许新网格的区域范围超过原网格的区域范围。
@@ -80,6 +85,17 @@ grdcut
 使用 ``-Z`` 选项使得子区域内的所有节点值都小于0::
 
         gmt grdcut abc.nc -Gdef.nc -Z-/0 -V
+
+To obtain data for an oblique Mercator projection map we need to extract
+more data that is actually used. This is necessary because the output of
+**grdcut** has edges defined by parallels and meridians, while the
+oblique map in general does not. Hence, to get all the data from the
+ETOPO2 data needed to make a contour map for the region defined by its
+lower left and upper right corners and the desired projection, use
+
+::
+
+    gmt grdcut @earth_relief_02m -R160/20/220/30r -Joc190/25.5/292/69/1 -Gdata.nc
 
 相关
 ----

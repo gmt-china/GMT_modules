@@ -25,7 +25,7 @@ modules = ['gmt', 'gmt5syntax', 'isogmt', 'gmtwhich',
            'grdcontour', 'grdcut', 'grdedit', 'grdfft', 'grdfilter',
            'grdgradient', 'grdhisteq', 'grdimage', 'grdinfo',
            'grdlandmask', 'grdmask', 'grdmath', 'grdpaste', 'grdproject',
-           'grdraster', 'grdconvert', 'gmtregress', 'grdsample',
+           'grdconvert', 'gmtregress', 'grdsample',
            'grdtrack', 'grdtrend', 'grdvector', 'grdview', 'grdvolume',
 
            'greenspline', 'kml2gmt', 'makecpt', 'mapproject', 'nearneighbor',

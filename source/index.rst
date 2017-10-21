@@ -108,7 +108,6 @@ GMT 模块列表
   - :doc:`grdlandmask` ：根据海岸线数据创建陆地-海洋的mask网格文件
   - :doc:`grdinfo` ：从网格文件中提取基本信息
   - :doc:`grdpaste` ：将两个网格沿着其共同边界拼接成一个文件
-  - :doc:`grdraster` ：从二进制数据中提取子区域并保存为GMT网格文件
   - :doc:`grdsample` ：对网格文件做重采样
   - :doc:`grdvolume` ：计算网格数据中某个等值线所包围的表面积和体积
   - :doc:`grd2xyz` ：将网格文件转换成表数据
@@ -261,7 +260,6 @@ GMT 模块列表
    grdpaste
    grdpmodeler
    grdproject
-   grdraster
    grdredpol
    grdconvert
    grdrotater
