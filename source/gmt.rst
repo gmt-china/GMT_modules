@@ -19,23 +19,6 @@ GMT的所有功能通过如下语法调用::
 
     gmt psbasemap -JX10c/10c -R0/20/0/5 -Bafg > test.ps
 
-会话管理
---------
-
-GMT 6开始提供了现代模式，以简化代码。
-
-clear
-+++++
-
-::
-
-    gmt clear history|conf|cache|all
-
-- `gmt clear history`: 删除当前目录下的 ``gmt.history`` 文件
-- `gmt clear conf`: 删除当前目录下的 ``gmt.conf`` 文件
-- `gmt clear cache`: 删除用户目录（ ``~/.gmt`` ）下的缓存文件夹
-- `gmt clear all`: 清理 history、conf 和 cache
-
 其他选项
 --------
 
@@ -50,3 +33,17 @@ clear
 - ``gmt --show-modules`` ：列出GMT的所有模块名
 - ``gmt --show-cores`` ：显示当前计算机可以使用的核数
 - ``gmt <module> =`` ：检测模块 ``<module>`` 是否存在，若存在则返回0，否则返回非零值
+
+现代模式
+--------
+
+GMT 6开始提供了现代模式以简化代码。
+
+- ``gmt begin`` 用于初始化一个新的GMT会话。
+- ``gmt figure`` 用于指定当前图件的文件名、格式以及其他选项
+- ``gmt subplot`` 用于指定子图相关信息
+- ``gmt revert`` 撤销当前图片的最近几个图层
+- ``gmt end`` 结束当前绘图
+
+具体用法见参考手册中相关章节。
+
