@@ -21,7 +21,7 @@ modules = ['gmt', 'gmt5syntax', 'isogmt', 'gmtwhich',
            'gmtinfo', 'gmtlogo', 'gmtmath', 'gmtselect', 'gmtset',
            'gmtsimplify', 'gmtspatial', 'gmtswitch', 'gmtvector',
 
-           'grd2cpt', 'grd2xyz', 'grdblend', 'grdclip',
+           'grd2cpt', 'grd2kml', 'grd2xyz', 'grdblend', 'grdclip',
            'grdcontour', 'grdcut', 'grdedit', 'grdfft', 'grdfilter',
            'grdgradient', 'grdhisteq', 'grdimage', 'grdinfo',
            'grdlandmask', 'grdmask', 'grdmath', 'grdpaste', 'grdproject',

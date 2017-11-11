@@ -118,6 +118,8 @@ GMT 模块列表
 
 - 尚未整理的命令
 
+  #. :doc:`grd2kml` ：
+  #. :doc:`psternary`
   #. :doc:`grdtrack`
   #. :doc:`makecpt`
   #. :doc:`grd2cpt`
@@ -238,6 +240,7 @@ GMT 模块列表
    gpsgridder
    gravfft
    grd2cpt
+   grd2kml
    grd2xyz
    grdblend
    grdclip
