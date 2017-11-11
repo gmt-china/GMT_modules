@@ -1,4 +1,4 @@
-``-L[g|j|J|n|x]<refpoint>+c[<slon>/]<slat>+w<length>[e|f|k|M|n|u][+a<align>][+f][+j<justify>][+l[<label>]][+o<dx>/[<dy>]][+u]``
+``-L[g|j|J|n|x]<refpoint>+c[<slon>/]<slat>+w<length>[e|f|k|M|n|u][+a<align>][+f][+j<justify>][+l[<label>]][+o<dx>/[<dy>]][+u][+v]``
     在地图上指定位置绘制比例尺。
 
     #. ``[g|j|J|n|x]<refpoint>`` 指定地图上的参考点，详情见 :ref:`doc:embellishments` 一节
@@ -13,6 +13,10 @@
     #. ``+u`` 比例尺的标注默认只有值没有单位，该选项会给所有标注加上单位
     #. ``+f`` 默认是简单的比例尺，使用该选项则绘制fancy比例尺，即黑白相间的
        火车轨道比例尺
+    #. ``+v`` 绘制垂直的笛卡尔比例尺
+
+    对于笛卡尔投影，不需要使用 ``+c`` 选项，不允许使用 ``+f`` 选项， ``+w`` 选项
+    后不需要指定单位，需要使用 ``+l`` 选项为笛卡尔数据指定单位。
 
     除此之外还有一些GMT参数可以控制比例尺的外观：
 
