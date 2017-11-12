@@ -186,6 +186,7 @@ GMT 模块列表
   #. :doc:`greenspline`
   #. :doc:`gshhg`
   #. :doc:`hotspotter`
+  #. :doc:`polespotter`
   #. :doc:`img2google`
   #. :doc:`img2grd`
   #. :doc:`originator`
@@ -292,6 +293,7 @@ GMT 模块列表
    mgd77track
    nearneighbor
    originator
+   polespotter
    project
    psbasemap
    psclip
