@@ -9,10 +9,10 @@ grdconvert
 必选选项
 --------
 
-``<ingrdfile>[=<id>[+s<scale>][+o<offset>][+n<invalid>]]``
+``<ingrdfile>[=<id>][+s<scale>][+o<offset>][+n<invalid>]``
     要读入的网格文件。其他参数的含义见 :ref:`doc:grid-data`
 
-``<outgrdfile>[=<id>[+s<scale>][+o<offset>][+n<invalid>]][:<driver>[/<datatype>]]``
+``<outgrdfile>[=<id>][+s<scale>][+o<offset>][+n<invalid>][:<driver>[/<datatype>]]``
     要写入的网格文件。其他参数的含义见 :ref:`doc:grid-data`
 
 ``-N``
