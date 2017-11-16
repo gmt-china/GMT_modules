@@ -63,8 +63,16 @@ filter1d
 ``-L<lack_width>``
     检查数据间断。若输入数据存在超过 ``<lack_width>`` 的间断，则该数据点不输出值。
 
-``-N<t_col>``
+``-N<t_col>`` ``-Nc|g[<unit>][+a]
     指定哪一列数据包含自变量（即时间）。默认值为0，即第一列。
+
+    Alternatively, indicate spatial filtering in which the first two columns provide
+    longitude, latitude (**-Ng**) or Cartesian x, y (**-Nc**) and we create a
+    along-track distance column and choose it as the *t_col* setting.  For geospatial
+    filtering you can append the desired distance unit (see UNITS for available
+    units and how distances are computed) [meter].  Optionally, you may append **+a** to have
+    the along-track distance being output as a new final column in the filtered data.
+
 
 ``-Q<q_factor>``
     检查输出值的质量因子。
