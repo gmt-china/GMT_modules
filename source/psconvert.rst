@@ -138,14 +138,12 @@ PDF、PNG、PPM、SVG、TIFF 格式。
     若PS文件在绘图时未使用 ``-P`` 选项，则psconvert的 ``-P`` 选项会将图片旋转90度。
 
 ``-Q[g|t][1|2|4]``
-    Set the anti-aliasing options for **g**\ raphics or **t**\ ext.
-    Append the size of the subsample box (1, 2, or 4) [4]. Default is no
-    anti-aliasing (same as *bits* = 1).
+    为图片和文字设置抗混淆选项，使得图片更清晰。对于矢量图片而言，默认不设置。
+    对于位图而言，默认值为 ``-Qt4`` ，对于透明PNG图片而言则再加上 ``-Qg2`` 。
 
 ``-S``
     在执行ghostscript命令后，将具体的命令打印到标准错误流中，且保留转换过程中的
     所有临时文件。该选项主要用于调试。
-
 
 ``-Tb|e|E|f|F|j|g|G|m|s|t``
     指定要转换的图片格式。可以接如下值：
