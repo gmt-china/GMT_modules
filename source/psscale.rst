@@ -6,7 +6,7 @@ psscale
 :官方文档: :ref:`gmt:psscale`
 :简介: 在地图上绘制灰色或彩色色条（colorbar）
 
-必须选项
+必选选项
 --------
 
 ``-D[g|j|J|n|x]<refpoint>[+w<length>[/<width>]][+e[b|f][<length>]][+h|v][+j<justify>][+m[a|c|l|u]][+n[<txt>]][+o<dx>[/<dy>]]``

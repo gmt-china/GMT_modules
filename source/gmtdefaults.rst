@@ -6,7 +6,7 @@ gmtdefaults
 :官方文档: :ref:`gmt:gmtdefaults`
 :简介: 列出所有GMT参数的当前值或系统默认值
 
-必须选项
+必选选项
 --------
 
 无

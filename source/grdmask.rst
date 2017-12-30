@@ -6,7 +6,7 @@ grdmask
 :官方文档: :ref:`gmt:grdmask`
 :简介: 根据多边形数据或点数据创建mask网格文件
 
-必须选项
+必选选项
 --------
 
 ``<pathfiles>``

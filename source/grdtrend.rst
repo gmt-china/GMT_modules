@@ -12,7 +12,7 @@ grdtrend
     m1 + m2\*x + m3\*y + m4\*x\*y + m5\*x\*x + m6\*y\*y + m7\*x\*x\*x +
     m8\*x\*x\*y + m9\*x\*y\*y + m10\*y\*y\*y.
 
-必须选项
+必选选项
 --------
 
 ``<gridfile>``

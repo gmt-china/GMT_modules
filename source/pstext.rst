@@ -12,7 +12,7 @@ pstext
 实现希腊字母、上下标等功能，详见 :ref:`doc:text` 、 :ref:`doc:character-escape` 、
 :ref:`doc:special-fonts` 和 :ref:`doc:special-characters` 。
 
-必须选项
+必选选项
 --------
 
 ``<textfiles>``
