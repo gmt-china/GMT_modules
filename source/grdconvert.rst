@@ -6,7 +6,7 @@ grdconvert
 :官方文档: :ref:`gmt:grdconvert`
 :简介: 在不同的网格格式之间互相转换
 
-必须选项
+必选选项
 --------
 
 ``<ingrdfile>[=<id>[+s<scale>][+o<offset>][+n<invalid>]]``

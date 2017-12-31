@@ -27,7 +27,7 @@ grdraster.info
 
     文件号 文件标题 Z值单位 -R范围 -I间隔 配准方式 数据格式 scale offset NaN 文件名
 
-必须选项
+必选选项
 --------
 
 ``<filenumber>``

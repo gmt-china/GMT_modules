@@ -15,7 +15,7 @@ xyz2grd
 若需要网格化功能，可以使用模块 ``surface`` 、 ``greenspline`` 、 ``nearneighbor``
 或 ``triangulate`` 。
 
-必须选项
+必选选项
 --------
 
 ``<table>``

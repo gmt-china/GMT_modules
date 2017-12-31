@@ -17,7 +17,7 @@ grdsample
 存在混淆效应，因而需要在插值前使用 ``grdfft`` 或 ``grdfilter`` 对网格文件做
 滤波。
 
-必须选项
+必选选项
 --------
 
 ``<in_grdfile>``

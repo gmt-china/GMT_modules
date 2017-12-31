@@ -13,7 +13,7 @@ psconvert
 该模块通过调用 GhostScript 将 PS/EPS 文件转换为其他图片格式，包括BMP、EPS、JPEG、
 PDF、PNG、PPM、SVG、TIFF 格式。
 
-必须选项
+必选选项
 --------
 ``psfiles``
     要转换格式的 PS 文件名
