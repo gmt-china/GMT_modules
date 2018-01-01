@@ -61,7 +61,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'GMT模块手册'
-copyright = u'2014-2017, GMT中文社区'
+copyright = u'2014-2018, GMT中文社区'
 author = u'GMT中文社区'
 
 # The version info for the project you're documenting, acts as replacement for
