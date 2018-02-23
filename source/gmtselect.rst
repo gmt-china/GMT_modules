@@ -142,7 +142,7 @@ gmtselect
 筛选与 ``pts.txt`` 中所有点的距离在300 km以内，与 ``lines.txt`` 中线段的
 距离在100 km以外的点::
 
-    gmt select lonlatfile -fg -Cpts.txt+d300k -Llined.txt+d100k -Il > subset
+    gmt select lonlatfile -fg -Cpts.txt+d300k -Llines.txt+d100k -Il > subset
 
 此处需要使用 ``-fg`` 以告知程序正在处理地理数据。
 
