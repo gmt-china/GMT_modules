@@ -39,8 +39,6 @@ psxy
     注：由于这里投影比较特别，所以沿着经线的线和沿着纬线的线，看上去都是直线，
     在其他投影方式下可能不会是这样。
 
-    该选项的一个可能的用途见示例：http://seisman.info/plot-specified-gridline-on-maps.html
-
 ``-C<cpt>``
     指定CPT文件或颜色列表
 
