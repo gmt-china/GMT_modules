@@ -1,4 +1,4 @@
-# GMT参考手册
+# GMT模块手册
 
 [![Sphinx](https://img.shields.io/badge/Powered%20by-Sphinx-orange.svg)](http://www.sphinx-doc.org/)
 [![Build Status](https://travis-ci.org/gmt-china/GMT_modules.svg?branch=master)](https://travis-ci.org/gmt-china/GMT_modules)
