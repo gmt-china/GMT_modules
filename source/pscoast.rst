@@ -145,8 +145,8 @@ pscoast
 ``-S<fill>|c``
     设置wet区域的填充色或裁剪wet区域
 
-    #. ``-G<fill>`` 设置wet区域（一般指海洋或湖泊）的填充色
-    #. ``-Gc`` 将wet区域裁剪出来，使得接下来的绘图只有wet区域内的才会被绘制
+    #. ``-S<fill>`` 设置wet区域（一般指海洋或湖泊）的填充色
+    #. ``-Sc`` 将wet区域裁剪出来，使得接下来的绘图只有wet区域内的才会被绘制
 
 .. include:: explain_-T_directional_rose.rst_
 
