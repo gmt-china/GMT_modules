@@ -256,72 +256,41 @@ html_search_language = 'zh'
 htmlhelp_basename = 'GMT_modules'
 
 # -- Options for LaTeX output ---------------------------------------------
-latex_engine = 'xelatex'
-latex_elements = {
-        'papersize'  : 'a4paper',
-        'utf8extra'  : '',
-        'inputenc'   : '',
-        'cmappkg'    : '',
-        'fontenc'    : '',
-        'releasename': '',
-        'babel'      : r'''\usepackage[english]{babel}''',
-        'figure_align': 'htp',
-        'preamble'   : r'''
-            \usepackage{ctex}
-            \parindent 2em
-            \setcounter{tocdepth}{3}
-            \setcounter{secnumdepth}{3}
-            \hypersetup{
-                CJKbookmarks = true,
-                colorlinks = true,
-                linkcolor = blue,
-                citecolor = blue,
-                urlcolor = blue,
-            }
-        ''',
-}
-
-latex_additional_files = ['gmt-modules.cls']
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_title = 'GMT v' + version + u'模块手册'
+latex_engine = "xelatex"
 latex_documents = [
-    (master_doc, 'GMT_modules.tex', latex_title, author, 'gmt-modules'),
+    (master_doc, 'GMT_modules.tex', "{} v{}".format(project, version), author, 'ctexbook'),
 ]
-
-# The name of an image file (relative to this directory) to place at the top of
-# the title page.
-#
-# latex_logo = None
-
-# For "manual" documents, if this is true, then toplevel headings are parts,
-# not chapters.
-#
-# latex_use_parts = False
-
-# If true, show page references after internal links.
-#
-# latex_show_pagerefs = False
-
-# If true, show URL addresses after external links.
-#
-# latex_show_urls = False
-
-# Documents to append as an appendix to all manuals.
-#
-# latex_appendices = []
-
-# It false, will not define \strong, \code, 	itleref, \crossref ... but only
-# \sphinxstrong, ..., \sphinxtitleref, ... To help avoid clash with user added
-# packages.
-#
-# latex_keep_old_macro_names = True
-
-# If false, no module index is generated.
-#
-# latex_domain_indices = True
+latex_logo = None
+latex_toplevel_sectioning = 'chapter'
+latex_additional_files = ['GMT_style.sty']
+latex_elements = {
+    'papersize' : 'a4paper',
+    'pointsize' : '11pt',
+    'extraclassoptions' : 'UTF8,twoside,punct=CCT',
+    'preamble'  : r'\input{GMT_style.sty}',
+    'figure_align' : 'H',
+    'geometry'  : r'\usepackage[top=3.0cm, bottom=2.0cm, left=3.5cm, right=2.5cm]{geometry}',
+    # customized tableofcontents
+    'tableofcontents' : r'''\pdfbookmark[0]{\contentsname}{contents}
+                            \tableofcontents
+                            \cleardoublepage
+                            \pdfbookmark[0]{\listfigurename}{lof}
+                            \listoffigures
+                            \cleardoublepage
+                            \pdfbookmark[0]{\listtablename}{lot}
+                            \listoftables
+                            \cleardoublepage''',
+    'passoptionstopackages': r'\PassOptionsToPackage{dvipsnames, svgnames}{xcolor}',
+    'sphinxsetup': r'''VerbatimColor={named}{Lavender},
+                       VerbatimBorderColor={named}{Silver},
+                       ''',
+    'fncychap'  : '',   # use default chapter style from ctex
+    'babel'     : '',
+    'polyglossia': '',
+    'fontpkg'   : '',
+    'cmappkg'   : '',
+    'fontenc'   : '',
+}
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
