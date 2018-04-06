@@ -35,7 +35,7 @@ docs = {
 
 payload_list = []
 for key, value in docs.items():
-    payload_list.append('{0} std:label -1 {1}.html {0}\n'.format(key, value))
+    payload_list.append('{0} std:label -1 {1} {0}\n'.format(key, value))
 
 inventory_payload = ''.join(payload_list).encode('utf-8')
 
