@@ -36,6 +36,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
     'edit_on_github',
+    'sphinx_cjkspace.cjkspace',
 ]
 mathjax_path = 'http://cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
 edit_on_github_project = 'gmt-china/GMT_modules'
