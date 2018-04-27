@@ -19,4 +19,4 @@
     #. ``FONT_LABEL`` 控制比例尺的标签字体
     #. ``FONT_ANNOT_PRIMARY`` 控制比例尺的标注字体
     #. ``MAP_SCALE_HEIGHT`` 控制比例尺的高度
-    #. ``MAP_TICK_PEN_PRIMARY`` 控制比例尺的刻度属性
+    #. ``MAP_TICK_PEN_PRIMARY`` 控制比例尺的线及刻度属性
