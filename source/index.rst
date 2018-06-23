@@ -8,9 +8,9 @@ GMT 模块列表
 **相关链接**
 
 - 社区主页： http://gmt-china.org
-- 项目主页： http://modules.gmt-china.org
+- 项目主页： https://modules.gmt-china.org
 - 项目源码： https://github.com/gmt-china/GMT_modules
-- GMT中文参考手册： http://docs.gmt-china.org
+- GMT中文参考手册： https://docs.gmt-china.org
 
 **文档约定**
 

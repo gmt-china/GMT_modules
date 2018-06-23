@@ -296,5 +296,5 @@ latex_elements = {
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
     'gmt': ('http://gmt.soest.hawaii.edu/doc/5.4.3/', 'gmt.inv'),
-    'doc': ('http://docs.gmt-china.org/', 'docs.inv')
+    'doc': ('https://docs.gmt-china.org/', 'docs.inv')
 }
