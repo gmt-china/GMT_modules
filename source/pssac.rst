@@ -111,10 +111,15 @@ pssac 实现波形绘制的步骤是：
 ``-Q``
     垂直绘制波形，即Y轴是时间，X轴是振幅
 
-``-S<sec_per_measure>[<unit>]``
-    指定时间缩放因子，即图上 1 单位的距离所代表的波形秒数（仅限于地理投影）
+``-S[i]<scale>[<unit>]``
+    指定时间比例尺。
 
-    若未指定 ``<unit>`` ，默认使用 ``PROJ_LENGTH_UNIT``
+    对于地理投影而言，即表示图上一个单位距离所代表的波形描述。
+    其中单位 ``<unit>`` 可以取 ``c|i|p`` 。
+    若未指定 ``<unit>`` ，则默认使用 ``PROJ_LENGTH_UNIT`` 所指定的单位。
+
+    在 ``<scale>`` 前加上 ``i`` 则时间比例尺的含义反过来，即 ``<scale>`` 表示
+    1秒长度的波形在图上的实际长度。
 
 ``-T[+t<n>][+r<reduce_vel>][+s<shift>]``
     指定参考时间及偏移量
@@ -142,5 +147,5 @@ pssac 实现波形绘制的步骤是：
 
 利用 SAC 命令 ``datagen sub tel *.z`` 生成多个波形，将其绘制在地图上::
 
-    gmt pssac *.z -JM15c -R-120/-40/35/65 -Baf -M1i -S1500c -K > map.ps
+    gmt pssac *.z -JM15c -R-120/-40/35/65 -Baf -M1i -S300c -K > map.ps
     saclst stlo stla f *.z | gmt psxy -J -R -St0.4c -Gblack -i1,2 -O >> map.ps

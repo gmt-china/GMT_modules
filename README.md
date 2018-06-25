@@ -19,7 +19,7 @@
 
 ## 版本说明
 
-本手册目前与 GMT 5.4.3 同步，历史版本见 [release](https://github.com/gmt-china/GMT_modules/releases) 页面。
+本手册目前与 GMT 5.4.4 同步，历史版本见 [release](https://github.com/gmt-china/GMT_modules/releases) 页面。
 
 - 在线阅读： https://modules.gmt-china.org
 - 离线阅读：[HTML](https://modules.gmt-china.org/GMT_modules.zip) [PDF](https://modules.gmt-china.org/GMT_modules.pdf)
