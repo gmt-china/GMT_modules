@@ -84,6 +84,7 @@ GMT 模块列表
   - :doc:`gmtlogo` ：在图上绘制GMT图形logo
   - :doc:`psimage` ：将EPS或光栅图片放在图上
   - :doc:`psscale` ：在图上绘制灰色或彩色色标
+  - :doc:`grdcontour` ：绘制等高线
   - :doc:`grdvector` ：根据两个网格文件绘制矢量场
   - :doc:`grdimage` ：在图上绘制网格数据
 
