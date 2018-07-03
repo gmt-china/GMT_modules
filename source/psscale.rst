@@ -47,7 +47,7 @@ psscale
 
     默认情况下，对于水平colorbar而言，X轴的标签会放在colorbar的下边，Y轴标签放在
     colorbar的右边；对于垂直colorbar而言，X轴的标签放在colorbar的右边，Y轴标签
-    放在colorbar的上边。
+    放在colorbar的上边。除非在 ``-D`` 选项中使用了 ``+m`` 子选项。
 
 ``-C``
     要绘制的CPT文件。
