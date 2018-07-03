@@ -75,7 +75,7 @@ fitcircle
    :language: bash
 
 .. figure:: /images/fitcircle_ex1.*
-   :width: 600 px
+   :width: 100%
    :align: center
 
    fitcircle示例

@@ -78,7 +78,7 @@ pssolar
 
     .. figure:: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Twilight_subcategories.svg/640px-Twilight_subcategories.svg.png
        :align: center
-       :width: 400px
+       :width: 80%
 
        曙暮光区的多种定义（图片来自于 https://en.wikipedia.org/wiki/Twilight）
 

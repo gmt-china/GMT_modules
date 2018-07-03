@@ -196,7 +196,7 @@ psmeca
 
 .. figure:: /images/psmeca_ex1.*
    :alt: meca
-   :width: 600 px
+   :width: 100%
    :align: center
 
    psmeca示例图1
@@ -206,7 +206,7 @@ psmeca
 
 .. figure:: /images/psmeca_ex2.*
    :alt: meca
-   :width: 600 px
+   :width: 100%
    :align: center
 
    psmeca示例图2
@@ -216,7 +216,7 @@ psmeca
 
 .. figure:: /images/psmeca_ex3.*
    :alt: meca
-   :width: 600 px
+   :width: 100%
    :align: center
 
    psmeca示例图3

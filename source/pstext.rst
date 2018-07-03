@@ -47,7 +47,7 @@ pstext
     下图展示了 ``-C`` 选项的作用。
 
     .. figure:: /images/GMT_pstext_clearance.*
-       :width: 400 px
+       :width: 80%
        :align: center
 
 ``-D[j|J]<dx>[/<dy>][+v[<pen>]]``
@@ -175,7 +175,7 @@ pstext
        :language: bash
 
     .. figure:: /images/pstext_-M.*
-       :width: 600px
+       :width: 100%
        :align: center
 
        段落模式示意图

@@ -31,7 +31,7 @@ psxy
     的效果；黄线为使用 ``-Am`` 的效果：
 
     .. figure:: /images/psxy_-A.*
-       :width: 500px
+       :width: 100%
        :align: center
 
        psxy -A选项示意图
@@ -241,7 +241,7 @@ psxy
     下图给出了上面所给出的symbol所对应的符号：
 
     .. figure:: /images/psxy_symbols.*
-       :width: 700px
+       :width: 100%
        :align: center
        :alt: psxy simple symbols
 
@@ -338,7 +338,7 @@ psxy
        :language: bash
 
     .. figure:: /images/psxy_-Sf.*
-       :width: 600px
+       :width: 100%
        :align: center
        :alt: psxy -Sf example
 
@@ -395,7 +395,7 @@ psxy
        :language: bash
 
     .. figure:: /images/psxy_-Sm.*
-       :width: 500px
+       :width: 100%
        :align: center
        :alt: psxy angle arc
 
@@ -496,7 +496,7 @@ psxy
        :language: bash
 
     .. figure:: /images/psxy_-Sw.*
-       :width: 500px
+       :width: 100%
        :align: center
        :alt: psxy pie wedge
 
@@ -574,7 +574,7 @@ psxy
    :language: bash
 
 .. figure:: /images/psxy_-F.*
-   :width: 600px
+   :width: 100%
    :align: center
 
    psxy -F选项示意图
@@ -585,7 +585,7 @@ psxy
    :language: bash
 
 .. figure:: /images/psxy_-L.*
-   :width: 600px
+   :width: 100%
    :align: center
 
    psxy -L选项示意图

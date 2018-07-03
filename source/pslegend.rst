@@ -150,7 +150,7 @@ GMT中共有14种图例类型，列举如下：
    :language: bash
 
 .. figure:: /images/pslegend_ex1.*
-   :width: 600px
+   :width: 100%
    :align: center
 
    pslegend示例图1
@@ -159,7 +159,7 @@ GMT中共有14种图例类型，列举如下：
    :language: bash
 
 .. figure:: /images/pslegend_ex2.*
-   :width: 600px
+   :width: 100%
    :align: center
 
    pslegend示例图2

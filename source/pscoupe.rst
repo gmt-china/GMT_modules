@@ -109,7 +109,7 @@ pscoupe
 
 .. figure:: /images/pscoupe_ex1.*
    :alt: pscoupe example 1
-   :width: 600 px
+   :width: 100%
    :align: center
 
    pscoupe示例图1
@@ -121,7 +121,7 @@ pscoupe
 
 .. figure:: /images/pscoupe_ex2.*
    :alt: pscoupe example 2
-   :width: 600 px
+   :width: 100%
    :align: center
 
    pscoupe示例图2

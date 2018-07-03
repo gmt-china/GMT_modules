@@ -73,7 +73,7 @@ pspolar
    :language: bash
 
 .. figure:: /images/pspolar_ex1.*
-   :width: 500px
+   :width: 100%
    :align: center
 
    pspolar示例

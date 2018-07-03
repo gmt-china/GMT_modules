@@ -39,7 +39,7 @@ psbasemap
     下图展示了方向玫瑰图的效果图：
 
     .. figure:: /images/psbasemap_ex3.*
-       :width: 600px
+       :width: 100%
        :align: center
 
        方向玫瑰图
@@ -116,7 +116,7 @@ psbasemap
    :language: bash
 
 .. figure:: /images/psbasemap_ex1.*
-   :width: 600px
+   :width: 100%
    :align: center
 
    用psbasemap命令-D选项绘制图中图
@@ -127,7 +127,7 @@ psbasemap
    :language: bash
 
 .. figure:: /images/psbasemap_ex2.*
-   :width: 600px
+   :width: 100%
    :align: center
 
    用psbasemap命令-D选项绘制另一种图中图
@@ -138,7 +138,7 @@ psbasemap
    :language: bash
 
 .. figure:: /images/psbasemap_ex4.*
-   :width: 600px
+   :width: 100%
    :align: center
 
    磁场玫瑰图

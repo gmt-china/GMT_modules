@@ -104,7 +104,7 @@ psvelo
    :language: bash
 
 .. figure:: /images/psvelo_ex1.*
-   :width: 600 px
+   :width: 100%
    :align: center
 
    psvelo示例图1
@@ -113,7 +113,7 @@ psvelo
    :language: bash
 
 .. figure:: /images/psvelo_ex2.*
-   :width: 600 px
+   :width: 100%
    :align: center
 
    psvelo示例图2
