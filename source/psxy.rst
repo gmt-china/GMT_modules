@@ -395,7 +395,7 @@ psxy
        :language: bash
 
     .. figure:: /images/psxy_-Sm.*
-       :width: 100%
+       :width: 50%
        :align: center
        :alt: psxy angle arc
 

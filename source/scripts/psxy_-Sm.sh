@@ -1,9 +1,9 @@
 #!/bin/bash
-R=0/4/0/3
-J=x2c
+R=0/4/0.5/1.5
+J=X6c/3c
 PS=psxy_-Sm.ps
 
-gmt psbasemap -R$R -J$J -Ba1g1 -BWSen -K > $PS
+gmt psbasemap -R$R -J$J -Bxa1g1 -Bya0.5g0.5 -BWSen -K > $PS
 gmt psxy -R$R -J$J -Sc0.15c -Gblack -K -O >> $PS << EOF
 1 1
 3 1
