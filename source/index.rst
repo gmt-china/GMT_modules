@@ -118,6 +118,7 @@ GMT 模块列表
 
 - 尚未整理的命令
 
+  #. :doc:`movie`
   #. :doc:`grd2kml` ：
   #. :doc:`psternary`
   #. :doc:`grdtrack`
@@ -291,6 +292,7 @@ GMT 模块列表
    mgd77path
    mgd77sniffer
    mgd77track
+   movie
    nearneighbor
    originator
    polespotter

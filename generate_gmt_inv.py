@@ -28,7 +28,9 @@ modules = ['gmt', 'gmt5syntax', 'isogmt', 'gmtwhich',
            'grdconvert', 'gmtregress', 'grdsample',
            'grdtrack', 'grdtrend', 'grdvector', 'grdview', 'grdvolume',
 
-           'greenspline', 'kml2gmt', 'makecpt', 'mapproject', 'nearneighbor',
+           'greenspline', 'kml2gmt', 'makecpt', 'mapproject', 'movie', 
+           'nearneighbor',
+           
 
            'psconvert', 'psbasemap', 'psclip', 'pscoast', 'psternary',
            'pstext', 'psxy', 'project', 'pscontour', 'pshistogram',
