@@ -12,7 +12,7 @@ gmt pscoast -R$R -J$J -B1 -Df -W2p -I2p -N1/2p -A1000 -K -O >> $PS
 # 此处可以任意添加其他绘图命令
 # ...
 
-# 开始绘制insert map
+# 开始绘制inset map
 Rg=72/135/16/55     # 大区域地图的范围-R
 Jg=M7c              # 大区域地图的投影方式-J
 # 绘制大区域地图的海岸线及边框
