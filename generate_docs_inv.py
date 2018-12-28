@@ -15,20 +15,20 @@ inventory_header = '''\
 '''.encode('utf-8')
 
 docs = {
-    'configurations': 'configurations',
-    'embellishments': 'basic/embellishments',
+    'configurations': 'conf',
+    'embellishments': 'basis/embellishments',
     'grid-data': 'io/grid-data',
-    'vectors': 'basic/vectors',
+    'vectors': 'basis/vectors',
     'cpt': 'io/cpt',
-    'text': 'basic/text',
-    'character-escape': 'basic/character-escape',
-    'special-fonts': 'basic/special-fonts',
-    'special-characters': 'basic/special-characters',
-    'anchors': 'basic/anchors',
-    'pen': 'basic/pen',
-    'lines': 'basic/lines',
-    'fill': 'basic/fill',
-    'unit': 'basic/unit',
+    'text': 'basis/text',
+    'character-escape': 'basis/character-escape',
+    'special-fonts': 'basis/special-fonts',
+    'special-characters': 'basis/special-characters',
+    'anchors': 'basis/anchors',
+    'pen': 'basis/pen',
+    'lines': 'basis/lines',
+    'fill': 'basis/fill',
+    'unit': 'basis/unit',
     'option-binary': 'option/binary',
     'option-n': 'option/n'
 }
