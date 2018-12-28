@@ -25,12 +25,19 @@ figures:
 	@echo "Update all figures..."
 	make -C source/scripts
 
-build: $(HTML) latexpdf
+#build: $(HTML) latexpdf
+#	@echo "Deploy HTML, ZIP and PDF"
+#	cd $(BUILDDIR) && \
+#	cp -r $(HTML) $(DOCNAME) && \
+#	zip -rm $(HTML)/$(DOCNAME).zip $(DOCNAME) && \
+#	cp latex/$(DOCNAME).pdf $(HTML) && \
+#	cd ..
+
+build: $(HTML)
 	@echo "Deploy HTML, ZIP and PDF"
 	cd $(BUILDDIR) && \
 	cp -r $(HTML) $(DOCNAME) && \
 	zip -rm $(HTML)/$(DOCNAME).zip $(DOCNAME) && \
-	cp latex/$(DOCNAME).pdf $(HTML) && \
 	cd ..
 
 serve: $(HTML)
