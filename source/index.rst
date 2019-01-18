@@ -78,6 +78,7 @@ GMT 模块列表
   - :doc:`pspolar` ：在震源球上绘制台站极性
   - :doc:`psvelo` ：在地图上绘制速度矢量、十字线、楔形图
   - :doc:`pscoupe` ：绘制震源机制解的剖面图
+  - :doc:`psternary` ：绘制三角图解
 
 - 绘制 2D 数据
 
@@ -119,7 +120,6 @@ GMT 模块列表
 
 - 尚未整理的命令
 
-  #. :doc:`psternary`
   #. :doc:`grdtrack`
   #. :doc:`makecpt`
   #. :doc:`grd2cpt`
