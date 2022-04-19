@@ -4,6 +4,8 @@
 [![Build Status](https://travis-ci.org/gmt-china/GMT_modules.svg?branch=master)](https://travis-ci.org/gmt-china/GMT_modules)
 [![License (CC BY-NC 4.0 CN)](https://img.shields.io/badge/license-CC%20BY--NC%204.0-red.svg)](http://creativecommons.org/licenses/by-nc/4.0/)
 
+**本手册不再维护更新！相关内容已经合并至 GMT 参考手册 https://docs.gmt-china.org/latest/module/!**
+
 欢迎来到 GMT（Generic Mapping Tools）的世界。
 
 本项目是由GMT中文社区维护的GMT模块手册，介绍GMT中常用的模块的用法。
